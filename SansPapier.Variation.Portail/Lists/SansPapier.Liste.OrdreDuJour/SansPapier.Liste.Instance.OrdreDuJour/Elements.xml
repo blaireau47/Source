@@ -1,0 +1,4 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <ListInstance Title="SansPapierListeOrdreDuJour" OnQuickLaunch="TRUE" TemplateType="10005" Url="Lists/SansPapierListeOrdreDuJour" Description=""></ListInstance>
+</Elements>

@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <!-- Parent ContentType: SansPapier.Portail - SansPapier.DocumentBase (SansPapier.Portail\SansPapier.DocumentBase) (0x010100db857b34418f4569ba0f331b7c877326) -->
+  <ContentType ID="0x010100db857b34418f4569ba0f331b7c87732600e44e8ae9faf74b09b0b0e5a50db046f7"
+	Name="SansPapier.DocumentSeance"
+	Group="Types de contenu SansPapier"
+	Description="Type de contenu de de document de séance de SansPapier. Hérite de DocumentBase."
+	Inherits="TRUE"
+	Version="0">
+    <FieldRefs>
+			<FieldRef ID="{e462fbed-14ab-49b9-a27d-ccc992d2a414}" Name="DateSeance" DisplayName="DateSeance" Required="FALSE" />
+		</FieldRefs>
+  </ContentType>
+</Elements>

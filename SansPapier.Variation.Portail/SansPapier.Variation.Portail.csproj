@@ -1,0 +1,704 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{BC35E575-8004-404A-ADD1-CDF648094511}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>SansPapier.Variation.Portail</RootNamespace>
+    <AssemblyName>SansPapier.Variation.Portail</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{C1CDDADD-2546-481F-9697-4EA41081F2FC};{14822709-B5A1-4724-98CA-57A101D1B079};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <SandboxedSolution>False</SandboxedSolution>
+    <ActiveDeploymentConfiguration>Default</ActiveDeploymentConfiguration>
+    <IncludeAssemblyInPackage>True</IncludeAssemblyInPackage>
+    <AssemblyDeploymentTarget>GlobalAssemblyCache</AssemblyDeploymentTarget>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>4.0</OldToolsVersion>
+    <ProjectMode>SharePointCustomization</ProjectMode>
+    <TargetOfficeVersion>15.0</TargetOfficeVersion>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>true</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>SansPapier.snk</AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DocumentFormat.OpenXml, Version=2.5.5631.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="ICSharpCode.SharpZipLib">
+      <HintPath>Librairies\ICSharpCode.SharpZipLib.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.SharePoint.IdentityModel, Version=14.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\Windows\assembly\GAC_MSIL\Microsoft.SharePoint.IdentityModel\14.0.0.0__71e9bce111e9429c\Microsoft.SharePoint.IdentityModel.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.SharePoint.Publishing, Version=14.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\Program Files\Common Files\Microsoft Shared\Web Server Extensions\14\ISAPI\Microsoft.SharePoint.Publishing.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.SharePoint.WorkflowActions, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.Web.CommandUI, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\Program Files\Common Files\microsoft shared\Web Server Extensions\15\ISAPI\Microsoft.Web.CommandUI.dll</HintPath>
+    </Reference>
+    <Reference Include="phoenix ">
+      <HintPath>..\phoenix .dll</HintPath>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="Microsoft.SharePoint" />
+    <Reference Include="Microsoft.SharePoint.Security" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Entities\Seances.cs" />
+    <Compile Include="Features\SansPapier.Variation.Configuration\SansPapier.Variation.Configuration.EventReceiver.cs">
+      <DependentUpon>SansPapier.Variation.Configuration.feature</DependentUpon>
+    </Compile>
+    <Compile Include="Features\SansPapier.Variation.PropagationTypeContenu\SansPapier.Variation.PropagationTypeContenu.EventReceiver.cs">
+      <DependentUpon>SansPapier.Variation.PropagationTypeContenu.feature</DependentUpon>
+    </Compile>
+    <Compile Include="Layouts\SansPapier.Variation.Portail\ActionsClient.aspx.cs">
+      <DependentUpon>ActionsClient.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Layouts\SansPapier.Variation.Portail\ActionsClient.aspx.designer.cs">
+      <DependentUpon>ActionsClient.aspx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Layouts\SansPapier.Variation.Portail\ChangerMotPasse.aspx.cs">
+      <DependentUpon>ChangerMotPasse.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Layouts\SansPapier.Variation.Portail\ChangerMotPasse.aspx.designer.cs">
+      <DependentUpon>ChangerMotPasse.aspx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Layouts\SansPapier.Variation.Portail\Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Layouts\SansPapier.Variation.Portail\Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MasterPageCode\AGPortalSiteProvider.cs" />
+    <Compile Include="MasterPageCode\SansPapier.Navigation.master.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Noyau\Extensions.cs" />
+    <Compile Include="Noyau\GenerateurDocument.cs" />
+    <Compile Include="PageLayoutCode\SansPapier.Comite.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Noyau\ParametresSysteme.cs" />
+    <Compile Include="Noyau\CleParametreSysteme.cs" />
+    <Compile Include="PageLayoutCode\SansPapier.Contenu.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PageLayoutCode\SansPapier.Accueil.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PageLayoutCode\SansPapier.ListeNouvelles.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PageLayoutCode\SansPapier.Redirection.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PageLayoutCode\SansPapier.SeanceConseil.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Resources\global.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>global.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\global.en-US.Designer.cs">
+      <DependentUpon>global.en-US.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Utilitaires\DictionaryExtensions.cs" />
+    <Compile Include="Utilitaires\HttpPostedFileExtensions.cs" />
+    <Compile Include="Utilitaires\MultiPartFormDataBoundary.cs" />
+    <Compile Include="Utilitaires\PropagationTypeContenu.cs" />
+    <Compile Include="Utilitaires\Utilitaires.cs" />
+    <Compile Include="VisualWebParts\BoiteRechercheWebPart\BoiteRechercheWebPart.cs" />
+    <Compile Include="VisualWebParts\BoiteRechercheWebPart\BoiteRechercheWebPartUserControl.ascx.cs">
+      <DependentUpon>BoiteRechercheWebPartUserControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="VisualWebParts\BoiteRechercheWebPart\BoiteRechercheWebPartUserControl.ascx.designer.cs">
+      <DependentUpon>BoiteRechercheWebPartUserControl.ascx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="VisualWebParts\ProchainesSeancesWebPart\ProchainesSeancesUserControl.ascx.cs">
+      <DependentUpon>ProchainesSeancesUserControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="VisualWebParts\ProchainesSeancesWebPart\ProchainesSeancesUserControl.ascx.designer.cs">
+      <DependentUpon>ProchainesSeancesUserControl.ascx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="VisualWebParts\ProchainesSeancesWebPart\ProchainesSeancesWebPart.cs" />
+    <Compile Include="VisualWebParts\EnvoiCourrielMembreWebPart\EnvoiCourrielMembreWebPart.cs" />
+    <Compile Include="VisualWebParts\EnvoiCourrielMembreWebPart\EnvoiCourrielMembreWebPartUserControl.ascx.cs">
+      <DependentUpon>EnvoiCourrielMembreWebPartUserControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="VisualWebParts\EnvoiCourrielMembreWebPart\EnvoiCourrielMembreWebPartUserControl.ascx.designer.cs">
+      <DependentUpon>EnvoiCourrielMembreWebPartUserControl.ascx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="VisualWebParts\FormulairesWebPart\FormulairesWebPart.cs" />
+    <Compile Include="VisualWebParts\FormulairesWebPart\FormulairesWebPartUserControl.ascx.cs">
+      <DependentUpon>FormulairesWebPartUserControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="VisualWebParts\FormulairesWebPart\FormulairesWebPartUserControl.ascx.designer.cs">
+      <DependentUpon>FormulairesWebPartUserControl.ascx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="VisualWebParts\LienUtileWebPart\LienUtileWebPart.cs" />
+    <Compile Include="VisualWebParts\LienUtileWebPart\LienUtileWebPartUserControl.ascx.cs">
+      <DependentUpon>LienUtileWebPartUserControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="VisualWebParts\LienUtileWebPart\LienUtileWebPartUserControl.ascx.designer.cs">
+      <DependentUpon>LienUtileWebPartUserControl.ascx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="VisualWebParts\ListeNouvelleWebPart\ListeNouvelleWebPart.cs" />
+    <Compile Include="VisualWebParts\ListeNouvelleWebPart\ListeNouvelleUserControl.ascx.cs">
+      <DependentUpon>ListeNouvelleUserControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="VisualWebParts\ListeNouvelleWebPart\ListeNouvelleUserControl.ascx.designer.cs">
+      <DependentUpon>ListeNouvelleUserControl.ascx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="VisualWebParts\SeanceWebPart\SeanceWebPart.cs" />
+    <Compile Include="VisualWebParts\SeanceWebPart\SeanceUserControl.ascx.cs">
+      <DependentUpon>SeanceUserControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="VisualWebParts\SeanceWebPart\SeanceUserControl.ascx.designer.cs">
+      <DependentUpon>SeanceUserControl.ascx.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ContentType\SansPapier.Comite\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{f1fdc8f4-70b9-4bf6-8d2f-db3d09500a4f}</SharePointProjectItemId>
+    </None>
+    <None Include="Images\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{b3d71aa5-9fbc-4de3-b0ee-dfaef4ac4674}</SharePointProjectItemId>
+    </None>
+    <None Include="Lists\SansPapier.Liste.OrdreDuJour\SansPapier.Liste.Instance.OrdreDuJour\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{71cc51f4-246c-4353-b6a5-e3f92196a79e}</SharePointProjectItemId>
+    </None>
+    <None Include="Lists\SansPapier.Liste.OrdreDuJour\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{ec6d1414-4ae1-4c68-803b-43baf9bde987}</SharePointProjectItemId>
+    </None>
+    <None Include="Modules\MasterPages\SansPapier.Variation.Navigation.master" />
+    <None Include="packages.config" />
+    <None Include="Resources\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{a213eb72-a57a-4f98-a69b-eb42642527d8}</SharePointProjectItemId>
+    </None>
+    <None Include="SansPapier.snk" />
+    <None Include="Columns\SansPapier.Colonnes\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{53755041-f764-4d25-961f-d070b7170efb}</SharePointProjectItemId>
+    </None>
+    <None Include="ContentType\SansPapier.Accueil\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{f1e87d89-0fe8-4924-a66a-5dc12c0ebf59}</SharePointProjectItemId>
+    </None>
+    <None Include="ContentType\SansPapier.PageBase\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{23fa9909-41c3-4f31-a4c8-f43f6defd792}</SharePointProjectItemId>
+    </None>
+    <None Include="ContentType\SansPapier.Contenu\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{761209cd-55b0-43aa-973a-5235258587fb}</SharePointProjectItemId>
+    </None>
+    <None Include="ContentType\SansPapier.ListeNouvelles\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{81a7dece-ea4e-4499-8a9b-4abe6640989e}</SharePointProjectItemId>
+    </None>
+    <None Include="ContentType\SansPapier.SeanceConseil\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{843c37f2-8d3e-44a9-88d0-e06683ad9fa5}</SharePointProjectItemId>
+    </None>
+    <None Include="ContentType\SansPapier.Recherche\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{2360c744-8bfe-46f1-bca3-9ae108aee555}</SharePointProjectItemId>
+    </None>
+    <None Include="ContentType\SansPapier.Authentification\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{d90b2864-44ad-4536-b54c-4e41a6904848}</SharePointProjectItemId>
+    </None>
+    <None Include="ContentType\SansPapier.DocumentBase\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{858dffb2-2e12-400c-9fa3-a37a754e3ca1}</SharePointProjectItemId>
+    </None>
+    <None Include="ContentType\SansPapier.DocumentSeance\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{a39045ed-2331-41c4-b2c2-8b177e8b5fec}</SharePointProjectItemId>
+    </None>
+    <None Include="ContentType\SansPapier.DocumentFormulaire\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{cccb40c1-33a1-4402-87da-7606fbad60e8}</SharePointProjectItemId>
+    </None>
+    <None Include="ContentType\SansPapier.Redirection\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{3ec55134-d98a-458b-99ec-473595c0bb13}</SharePointProjectItemId>
+    </None>
+    <None Include="Features\SansPapier.Variation.MasterPages\SansPapier.Variation.MasterPages.feature">
+      <FeatureId>{f6611af7-a5c7-4f1c-a2f3-a37a1fe0902e}</FeatureId>
+    </None>
+    <None Include="Features\SansPapier.Variation.PageLayouts\SansPapier.Variation.PageLayouts.feature">
+      <FeatureId>{a8185487-9df2-48b1-a1c7-16b701e7e2c4}</FeatureId>
+    </None>
+    <None Include="Features\SansPapier.Variation.VisualWebParts\SansPapier.Variation.VisualWebParts.feature">
+      <FeatureId>{563d300e-396b-4c6a-a34b-e940257382da}</FeatureId>
+    </None>
+    <None Include="Features\SansPapier.Variation.Lists.Definitions\SansPapier.Variation.Lists.Definitions.feature">
+      <FeatureId>{2b0efd24-40a0-42d6-884a-8485112c8837}</FeatureId>
+    </None>
+    <None Include="Features\SansPapier.Variation.Lists.Instances\SansPapier.Variation.Lists.Instances.feature">
+      <FeatureId>{39b8a007-b4c1-466e-b2ec-44d4ada96ed1}</FeatureId>
+    </None>
+    <None Include="Features\SansPapier.Variation.ContentTypes\SansPapier.Variation.ContentTypes.feature">
+      <FeatureId>{0589f76f-2231-41a3-aa96-f8b812100f61}</FeatureId>
+    </None>
+    <None Include="Features\SansPapier.Variation.Columns\SansPapier.Variation.Columns.feature">
+      <FeatureId>{d4e2d507-73b0-4884-aa81-c2ae8d875ca4}</FeatureId>
+    </None>
+    <None Include="Features\SansPapier.Variation.Configuration\SansPapier.Variation.Configuration.feature">
+      <FeatureId>{5766d94a-6330-425e-b0c9-f626cb5e917a}</FeatureId>
+    </None>
+    <None Include="Features\SansPapier.Variation.PropagationTypeContenu\SansPapier.Variation.PropagationTypeContenu.feature">
+      <FeatureId>{0a24d409-92a4-43a1-97f1-df2626ac036d}</FeatureId>
+    </None>
+    <None Include="Layouts\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{cdfd3bee-5f8c-43ca-ae10-cea11976f407}</SharePointProjectItemId>
+    </None>
+    <None Include="Lists\SansPapier.Bibliotheque.Seances\SansPapier.Bibliotheque.Instance.Seances\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{cfec0c3b-b892-465e-b2eb-5c66b34d0990}</SharePointProjectItemId>
+    </None>
+    <None Include="Lists\SansPapier.Bibliotheque.Seances\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{83893c28-411d-46ae-8995-8340c7b004b9}</SharePointProjectItemId>
+    </None>
+    <None Include="Lists\SansPapier.Bibliotheque.Formulaires\SansPapier.Bibliotheque.Formulaires\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{d79deb1e-a5d3-434e-abd8-b93e2dcc0ee5}</SharePointProjectItemId>
+    </None>
+    <None Include="Lists\SansPapier.Bibliotheque.Formulaires\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{ec6ddd1a-d64f-45c4-ae2a-a0a125d1b3c2}</SharePointProjectItemId>
+    </None>
+    <None Include="Lists\SansPapier.Liste.Courriels\SansPapier.Liste.Instance.Courriels\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{71362eab-f710-4c8d-abc3-a04418159c7a}</SharePointProjectItemId>
+    </None>
+    <None Include="Lists\SansPapier.Liste.Courriels\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{693c8510-933a-4d48-8b8a-4064579a7f4b}</SharePointProjectItemId>
+    </None>
+    <None Include="Lists\SansPapier.Liste.LiensUtiles\SansPapier.Liste.Instance.LiensUtiles\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{8493a2e6-64dc-4170-9148-a25610f4fac4}</SharePointProjectItemId>
+    </None>
+    <None Include="Lists\SansPapier.Liste.LiensUtiles\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{34e9dd36-1a43-40f6-b0c8-01a6f4c4f729}</SharePointProjectItemId>
+    </None>
+    <None Include="Lists\SansPapier.Liste.ParametresSysteme\SansPapier.Liste.ParametresSysteme\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{b826e44a-32e5-42f0-81b1-eea5ad0aff39}</SharePointProjectItemId>
+    </None>
+    <None Include="Lists\SansPapier.Liste.ParametresSysteme\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{8d0af226-c61b-42e9-9ce4-eef4d8cca284}</SharePointProjectItemId>
+    </None>
+    <None Include="Lists\SansPapier.Liste.Correspondance\SansPapier.Liste.Instance.Correspondance\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{9bca4ae3-e4e6-40b2-8196-3902051608eb}</SharePointProjectItemId>
+    </None>
+    <None Include="Lists\SansPapier.Liste.Correspondance\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{e6ff5a43-73df-4bc6-9f9f-cf793ad405bb}</SharePointProjectItemId>
+    </None>
+    <None Include="Modules\MasterPages\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{259a5954-e24f-4bfe-bf9d-c5c90cda8490}</SharePointProjectItemId>
+    </None>
+    <None Include="Modules\PageLayouts\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{5e1cec9b-a1ed-4847-b84f-339f96cdafd0}</SharePointProjectItemId>
+    </None>
+    <None Include="Package\Package.package">
+      <PackageId>{8bf14a5e-eab6-4e52-b0fd-5e6c7685a418}</PackageId>
+    </None>
+    <None Include="Package\Package.Template.xml">
+      <DependentUpon>Package.package</DependentUpon>
+    </None>
+    <None Include="VisualWebParts\BoiteRechercheWebPart\BoiteRechercheWebPart.webpart" />
+    <None Include="VisualWebParts\BoiteRechercheWebPart\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{bc916ca2-13f2-4d1f-8e76-2c63d2694f3b}</SharePointProjectItemId>
+    </None>
+    <None Include="VisualWebParts\ProchainesSeancesWebPart\ProchainesSeances.webpart" />
+    <None Include="VisualWebParts\ProchainesSeancesWebPart\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{f4885be7-07a7-4727-a6d5-d9033623c239}</SharePointProjectItemId>
+    </None>
+    <None Include="VisualWebParts\EnvoiCourrielMembreWebPart\EnvoiCourrielMembreWebPart.webpart" />
+    <None Include="VisualWebParts\EnvoiCourrielMembreWebPart\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{d4526259-a448-4a29-8123-5f9bc293732d}</SharePointProjectItemId>
+    </None>
+    <None Include="VisualWebParts\FormulairesWebPart\FormulairesWebPart.webpart" />
+    <None Include="VisualWebParts\FormulairesWebPart\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{b80ceee2-bb2c-4770-a1a6-63d88e5332e8}</SharePointProjectItemId>
+    </None>
+    <None Include="VisualWebParts\LienUtileWebPart\LienUtileWebPart.webpart" />
+    <None Include="VisualWebParts\LienUtileWebPart\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{42ed7381-f93e-4d13-b799-aeb0b205f369}</SharePointProjectItemId>
+    </None>
+    <None Include="VisualWebParts\ListeNouvelleWebPart\ListeNouvelle.webpart" />
+    <None Include="VisualWebParts\ListeNouvelleWebPart\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{b1a5f427-8e00-45b6-b739-60d466febc4d}</SharePointProjectItemId>
+    </None>
+    <None Include="VisualWebParts\SeanceWebPart\Seance.webpart" />
+    <None Include="VisualWebParts\SeanceWebPart\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{9ddaf8ed-8528-442f-8f7c-37185089872d}</SharePointProjectItemId>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Columns\SansPapier.Colonnes\Elements.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="ContentType\SansPapier.Accueil\Elements.xml" />
+    <Content Include="ContentType\SansPapier.PageBase\Elements.xml" />
+    <Content Include="ContentType\SansPapier.Contenu\Elements.xml" />
+    <Content Include="ContentType\SansPapier.ListeNouvelles\Elements.xml" />
+    <Content Include="ContentType\SansPapier.SeanceConseil\Elements.xml" />
+    <Content Include="ContentType\SansPapier.Recherche\Elements.xml" />
+    <Content Include="ContentType\SansPapier.Authentification\Elements.xml" />
+    <Content Include="ContentType\SansPapier.DocumentBase\Elements.xml" />
+    <Content Include="ContentType\SansPapier.DocumentSeance\Elements.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="ContentType\SansPapier.DocumentFormulaire\Elements.xml" />
+    <Content Include="ContentType\SansPapier.Redirection\Elements.xml" />
+    <Content Include="ContentType\SansPapier.Comite\Elements.xml" />
+    <Content Include="Features\SansPapier.Variation.MasterPages\SansPapier.Variation.MasterPages.Template.xml">
+      <DependentUpon>SansPapier.Variation.MasterPages.feature</DependentUpon>
+    </Content>
+    <Content Include="Features\SansPapier.Variation.PageLayouts\SansPapier.Variation.PageLayouts.Template.xml">
+      <DependentUpon>SansPapier.Variation.PageLayouts.feature</DependentUpon>
+    </Content>
+    <Content Include="Features\SansPapier.Variation.VisualWebParts\SansPapier.Variation.VisualWebParts.Template.xml">
+      <DependentUpon>SansPapier.Variation.VisualWebParts.feature</DependentUpon>
+    </Content>
+    <Content Include="Features\SansPapier.Variation.Lists.Definitions\SansPapier.Variation.Lists.Definitions.Template.xml">
+      <DependentUpon>SansPapier.Variation.Lists.Definitions.feature</DependentUpon>
+    </Content>
+    <Content Include="Features\SansPapier.Variation.Lists.Instances\SansPapier.Variation.Lists.Instances.Template.xml">
+      <DependentUpon>SansPapier.Variation.Lists.Instances.feature</DependentUpon>
+    </Content>
+    <Content Include="Features\SansPapier.Variation.ContentTypes\SansPapier.Variation.ContentTypes.Template.xml">
+      <DependentUpon>SansPapier.Variation.ContentTypes.feature</DependentUpon>
+    </Content>
+    <Content Include="Features\SansPapier.Variation.Columns\SansPapier.Variation.Columns.Template.xml">
+      <DependentUpon>SansPapier.Variation.Columns.feature</DependentUpon>
+    </Content>
+    <Content Include="Features\SansPapier.Variation.Configuration\SansPapier.Variation.Configuration.Template.xml">
+      <DependentUpon>SansPapier.Variation.Configuration.feature</DependentUpon>
+    </Content>
+    <Content Include="Features\SansPapier.Variation.PropagationTypeContenu\SansPapier.Variation.PropagationTypeContenu.Template.xml">
+      <DependentUpon>SansPapier.Variation.PropagationTypeContenu.feature</DependentUpon>
+    </Content>
+    <Content Include="Images\SansPapier.Variation.Portail\LoginArrow.png" />
+    <Content Include="Layouts\SansPapier.Variation\Images\AccueilBlanc.png" />
+    <Content Include="Layouts\SansPapier.Variation\Images\bandePIV.gif" />
+    <Content Include="Layouts\SansPapier.Variation\Images\bgBoutonBleu.gif" />
+    <Content Include="Layouts\SansPapier.Variation\Images\bgBoutonGris.gif" />
+    <Content Include="Layouts\SansPapier.Variation\Images\bgBoutonOrange.gif" />
+    <Content Include="Layouts\SansPapier.Variation\Images\bgConnexion.gif" />
+    <Content Include="Layouts\SansPapier.Variation\Images\bgConnexion.png" />
+    <Content Include="Layouts\SansPapier.Variation\Images\bgConnexionModif.gif" />
+    <Content Include="Layouts\SansPapier.Variation\Images\bgConnexionModif.png" />
+    <Content Include="Layouts\SansPapier.Variation\Images\bgEntete.gif" />
+    <Content Include="Layouts\SansPapier.Variation\Images\bgEntete.jpg" />
+    <Content Include="Layouts\SansPapier.Variation\Images\bgPivBas.jpg" />
+    <Content Include="Layouts\SansPapier.Variation\Images\bgPivBasDroite.jpg" />
+    <Content Include="Layouts\SansPapier.Variation\Images\bgPivBasGauche.jpg" />
+    <Content Include="Layouts\SansPapier.Variation\Images\bgPivDroite.jpg" />
+    <Content Include="Layouts\SansPapier.Variation\Images\bgPIVEnvCollSec.gif" />
+    <Content Include="Images\SansPapier.Variation.Portail\Feature_Agropur.png" />
+    <Content Include="Layouts\SansPapier.Variation\Images\home_bg_full.jpg" />
+    <Content Include="Layouts\SansPapier.Variation\Images\img-piv-visage_1.jpg" />
+    <Content Include="Layouts\SansPapier.Variation\Images\img-piv-visage_2.jpg" />
+    <Content Include="Layouts\SansPapier.Variation\Images\img-piv-visage_3.jpg" />
+    <Content Include="Layouts\SansPapier.Variation\Images\img-piv-visage_4.jpg" />
+    <Content Include="Layouts\SansPapier.Variation\Images\img-piv-visage_5.jpg" />
+    <Content Include="Images\SansPapier.Variation.Portail\Logo-site.png" />
+    <Content Include="Layouts\SansPapier.Variation\Images\LogoFondGris.gif" />
+    <Content Include="Layouts\SansPapier.Variation\Images\logoPIV.gif" />
+    <Content Include="Layouts\SansPapier.Variation\Images\logoPIVImpression.gif" />
+    <Content Include="Layouts\SansPapier.Variation\Images\logo.gif" />
+    <Content Include="Layouts\SansPapier.Variation\Images\logo.png" />
+    <Content Include="Layouts\SansPapier.Variation\Images\logoImpression.gif" />
+    <Content Include="Layouts\SansPapier.Variation\Images\PIVtitre.png" />
+    <Content Include="Layouts\SansPapier.Variation\Images\titreDocumentsDinfo.gif" />
+    <Content Include="Layouts\SansPapier.Variation\Images\titreMembresDuComite.gif" />
+    <Content Include="Layouts\SansPapier.Variation\Images\titreRapportsEtAutresDocuments.gif" />
+    <Content Include="Layouts\SansPapier.Variation\Scripts\jquery-1.8.2.min.js" />
+    <Content Include="Layouts\SansPapier.Variation\Scripts\jquery.corner.js" />
+    <Content Include="Layouts\SansPapier.Variation\Scripts\SP2013Accordion.js" />
+    <Content Include="Layouts\SansPapier.Variation\Styles\globalEdition.css" />
+    <Content Include="Layouts\SansPapier.Variation\Styles\globalLecture.css" />
+    <Content Include="Layouts\SansPapier.Variation\Styles\SP2013Accordion.css" />
+    <Content Include="Librairies\ICSharpCode.SharpZipLib.dll" />
+    <Content Include="Lists\SansPapier.Liste.OrdreDuJour\Elements.xml" />
+    <Content Include="Lists\SansPapier.Liste.OrdreDuJour\SansPapier.Liste.Instance.OrdreDuJour\Elements.xml" />
+    <Content Include="Lists\SansPapier.Liste.OrdreDuJour\Schema.xml" />
+    <Content Include="Modules\PageLayouts\SansPapier.Variation.Accueil.aspx" />
+    <Content Include="Modules\PageLayouts\SansPapier.Variation.Comite.aspx" />
+    <Content Include="Modules\PageLayouts\SansPapier.Variation.Contenu.aspx" />
+    <Content Include="Modules\PageLayouts\SansPapier.Variation.ListeNouvelles.aspx" />
+    <Content Include="Modules\PageLayouts\SansPapier.Variation.Redirection.aspx" />
+    <Content Include="Modules\PageLayouts\SansPapier.Variation.SeanceConseil.aspx" />
+    <Content Include="Scripts\jquery-1.5.1-vsdoc.js" />
+    <Content Include="Layouts\SansPapier.Variation\Images\btnFormulaires_of.gif" />
+    <Content Include="Layouts\SansPapier.Variation.Portail\ActionsClient.aspx">
+      <SubType>ASPXCodeBehind</SubType>
+    </Content>
+    <Content Include="Layouts\SansPapier.Variation.Portail\ChangerMotPasse.aspx">
+      <SubType>ASPXCodeBehind</SubType>
+    </Content>
+    <Content Include="Layouts\SansPapier.Variation\Images\bgAjoutLienBottom.gif" />
+    <Content Include="Layouts\SansPapier.Variation\Images\bgAjoutLienTop.gif" />
+    <Content Include="Layouts\SansPapier.Variation\Images\bgColDroite.gif" />
+    <Content Include="Layouts\SansPapier.Variation\Images\bgContenuAccueil.gif" />
+    <Content Include="Layouts\SansPapier.Variation\Images\bgEnvoiCourrielBottom.gif" />
+    <Content Include="Layouts\SansPapier.Variation\Images\bgContenu.gif" />
+    <Content Include="Layouts\SansPapier.Variation\Images\bgContenuInterieur.gif" />
+    <Content Include="Layouts\SansPapier.Variation\Images\bgNavGauche.gif" />
+    <Content Include="Layouts\SansPapier.Variation\Images\bgEnvoiCourrielTop.gif" />
+    <Content Include="Layouts\SansPapier.Variation\Images\bgTabs.gif" />
+    <Content Include="Layouts\SansPapier.Variation\Images\btnAnnuler.gif" />
+    <Content Include="Layouts\SansPapier.Variation\Images\btnConnexion.gif" />
+    <Content Include="Layouts\SansPapier.Variation\Images\btnEnvoiCourrielClient_of.gif" />
+    <Content Include="Layouts\SansPapier.Variation\Images\btnEnvoiCourriel_ov.gif" />
+    <Content Include="Layouts\SansPapier.Variation\Images\btnJoindreSecretariatGeneral_of.gif" />
+    <Content Include="Layouts\SansPapier.Variation\Images\btnManuelRegieInterne_of.gif" />
+    <Content Include="Layouts\SansPapier.Variation\Images\btnRecherche_of.gif" />
+    <Content Include="Layouts\SansPapier.Variation\Images\btnRedigerCourriel_of.gif" />
+    <Content Include="Layouts\SansPapier.Variation\Images\btnRevuePresse_of.gif" />
+    <Content Include="Layouts\SansPapier.Variation\Images\btnSoumettre.gif" />
+    <Content Include="Layouts\SansPapier.Variation\Images\btnSuiviActivite_of.gif" />
+    <Content Include="Layouts\SansPapier.Variation\Images\btnSupprimer_of.gif" />
+    <Content Include="Layouts\SansPapier.Variation\Images\btnTableauBord_of.gif" />
+    <Content Include="Layouts\SansPapier.Variation\Images\icoAnterieure.gif" />
+    <Content Include="Layouts\SansPapier.Variation\Images\preload.gif" />
+    <Content Include="Layouts\SansPapier.Variation\Images\titEnviroComm.gif" />
+    <Content Include="Layouts\SansPapier.Variation\Scripts\global.js" />
+    <Content Include="Layouts\SansPapier.Variation\Scripts\jquery-ui-1.8.10.tabs.min.js" />
+    <Content Include="Layouts\SansPapier.Variation\Scripts\menu-plugin.js" />
+    <Content Include="Layouts\SansPapier.Variation\Scripts\stylesheetToggle.js" />
+    <Content Include="Layouts\SansPapier.Variation\Styles\connexion.css" />
+    <Content Include="Layouts\SansPapier.Variation\Styles\ie7.css" />
+    <Content Include="Layouts\SansPapier.Variation\Styles\jquery-ui-1.8.10.custom.css" />
+    <Content Include="Layouts\SansPapier.Variation\Styles\JqueryUIOveride.css" />
+    <Content Include="Layouts\SansPapier.Variation\Styles\policesGrandes.css" />
+    <Content Include="Layouts\SansPapier.Variation\Styles\policesReguliers.css" />
+    <Content Include="Layouts\SansPapier.Variation.Portail\Login.aspx">
+      <SubType>ASPXCodeBehind</SubType>
+    </Content>
+    <Content Include="Lists\SansPapier.Bibliotheque.Seances\EditDlg.htm" />
+    <Content Include="Lists\SansPapier.Bibliotheque.Seances\Elements.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Lists\SansPapier.Bibliotheque.Seances\FileDlg.htm" />
+    <Content Include="Lists\SansPapier.Bibliotheque.Seances\SansPapier.Bibliotheque.Instance.Seances\Elements.xml" />
+    <Content Include="Lists\SansPapier.Bibliotheque.Seances\Repair.aspx">
+      <SubType>ASPXCodeBehind</SubType>
+    </Content>
+    <Content Include="Lists\SansPapier.Bibliotheque.Seances\Schema.xml" />
+    <Content Include="Lists\SansPapier.Bibliotheque.Seances\Upload.aspx" />
+    <Content Include="Lists\SansPapier.Bibliotheque.Formulaires\EditDlg.htm" />
+    <Content Include="Lists\SansPapier.Bibliotheque.Formulaires\Elements.xml" />
+    <Content Include="Lists\SansPapier.Bibliotheque.Formulaires\FileDlg.htm" />
+    <Content Include="Lists\SansPapier.Bibliotheque.Formulaires\SansPapier.Bibliotheque.Formulaires\Elements.xml" />
+    <Content Include="Lists\SansPapier.Bibliotheque.Formulaires\Repair.aspx">
+      <SubType>ASPXCodeBehind</SubType>
+    </Content>
+    <Content Include="Lists\SansPapier.Bibliotheque.Formulaires\Schema.xml" />
+    <Content Include="Lists\SansPapier.Bibliotheque.Formulaires\Upload.aspx" />
+    <Content Include="Lists\SansPapier.Liste.Courriels\Elements.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Lists\SansPapier.Liste.Courriels\SansPapier.Liste.Instance.Courriels\Elements.xml" />
+    <Content Include="Lists\SansPapier.Liste.Courriels\Schema.xml" />
+    <Content Include="Layouts\SansPapier.Variation\Images\bgNavPrincipal.gif" />
+    <Content Include="Layouts\SansPapier.Variation\Images\bgNavUtilitaire.gif" />
+    <Content Include="Layouts\SansPapier.Variation\Images\bgPlusProchaineSeance_of.gif" />
+    <Content Include="Layouts\SansPapier.Variation\Images\bgPrincipal.jpg" />
+    <Content Include="Layouts\SansPapier.Variation\Images\btnImprimer_of.gif" />
+    <Content Include="Layouts\SansPapier.Variation\Images\btnNavUtile_ov.gif" />
+    <Content Include="Layouts\SansPapier.Variation\Images\btnPlusProchaineSeance_of.gif" />
+    <Content Include="Layouts\SansPapier.Variation\Images\btnTailleTextMoins_of.gif" />
+    <Content Include="Layouts\SansPapier.Variation\Images\btnTailleTextPlus_of.gif" />
+    <Content Include="Layouts\SansPapier.Variation\Images\icoPDF.gif" />
+    <Content Include="Layouts\SansPapier.Variation\Images\lienActionDetail.gif" />
+    <Content Include="Layouts\SansPapier.Variation\Images\logoGouvQuebec.gif" />
+    <Content Include="Layouts\SansPapier.Variation\Images\menuPrincipalSeparateur.gif" />
+    <Content Include="Layouts\SansPapier.Variation\Images\titreFormulaires.gif" />
+    <Content Include="Layouts\SansPapier.Variation\Images\titreLiensUtiles.gif" />
+    <Content Include="Layouts\SansPapier.Variation\Images\titreNouvelles.gif" />
+    <Content Include="Layouts\SansPapier.Variation\Images\titreProchaineSeance.gif" />
+    <Content Include="Layouts\SansPapier.Variation\Styles\Impression.css" />
+    <Content Include="Layouts\SansPapier.Variation\Styles\global.css" />
+    <Content Include="Lists\SansPapier.Liste.LiensUtiles\Elements.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Lists\SansPapier.Liste.LiensUtiles\SansPapier.Liste.Instance.LiensUtiles\Elements.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Lists\SansPapier.Liste.LiensUtiles\Schema.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Lists\SansPapier.Liste.ParametresSysteme\Elements.xml" />
+    <Content Include="Lists\SansPapier.Liste.ParametresSysteme\SansPapier.Liste.ParametresSysteme\Elements.xml" />
+    <Content Include="Lists\SansPapier.Liste.ParametresSysteme\Schema.xml" />
+    <Content Include="Lists\SansPapier.Liste.Correspondance\Elements.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Lists\SansPapier.Liste.Correspondance\SansPapier.Liste.Instance.Correspondance\Elements.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Lists\SansPapier.Liste.Correspondance\Schema.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Modules\MasterPages\Elements.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Modules\PageLayouts\Elements.xml" />
+    <Content Include="VisualWebParts\BoiteRechercheWebPart\BoiteRechercheWebPartUserControl.ascx">
+      <SubType>ASPXCodeBehind</SubType>
+    </Content>
+    <Content Include="VisualWebParts\BoiteRechercheWebPart\Elements.xml" />
+    <Content Include="VisualWebParts\ProchainesSeancesWebPart\Elements.xml" />
+    <Content Include="VisualWebParts\ProchainesSeancesWebPart\ProchainesSeancesUserControl.ascx">
+      <SubType>ASPXCodeBehind</SubType>
+    </Content>
+    <Content Include="VisualWebParts\EnvoiCourrielMembreWebPart\Elements.xml" />
+    <Content Include="VisualWebParts\EnvoiCourrielMembreWebPart\EnvoiCourrielMembreWebPartUserControl.ascx">
+      <SubType>ASPXCodeBehind</SubType>
+    </Content>
+    <Content Include="VisualWebParts\FormulairesWebPart\Elements.xml" />
+    <Content Include="VisualWebParts\FormulairesWebPart\FormulairesWebPartUserControl.ascx">
+      <SubType>ASPXCodeBehind</SubType>
+    </Content>
+    <Content Include="VisualWebParts\LienUtileWebPart\Elements.xml" />
+    <Content Include="VisualWebParts\LienUtileWebPart\LienUtileWebPartUserControl.ascx">
+      <SubType>ASPXCodeBehind</SubType>
+    </Content>
+    <Content Include="VisualWebParts\FormulairesWebPart\FormulairesWebPartUserControl.ascx" />
+    <Content Include="VisualWebParts\ListeNouvelleWebPart\Elements.xml" />
+    <Content Include="VisualWebParts\ListeNouvelleWebPart\ListeNouvelleUserControl.ascx">
+      <SubType>ASPXCodeBehind</SubType>
+    </Content>
+    <Content Include="VisualWebParts\SeanceWebPart\Elements.xml" />
+    <Content Include="VisualWebParts\SeanceWebPart\SeanceUserControl.ascx">
+      <SubType>ASPXCodeBehind</SubType>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.5">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.5 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\global.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>global.Designer.cs</LastGenOutput>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\global.en-US.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>global.en-US.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\WordDocumentGenerator.Library\WordDocumentGenerator.Library.csproj">
+      <Project>{c041c8c6-ac4e-4f74-a827-7f3d790e1ace}</Project>
+      <Name>WordDocumentGenerator.Library</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup />
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\SharePointTools\Microsoft.VisualStudio.SharePoint.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\SharePointTools\Microsoft.VisualStudio.SharePoint.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{C1CDDADD-2546-481F-9697-4EA41081F2FC}">
+        <DeploymentConfigurations>
+          <DeploymentConfiguration Name="Some feature activations" Description="Activations de quelques features">
+            <DeploymentSteps>Microsoft.VisualStudio.SharePoint.PreDeploymentCommand;Microsoft.VisualStudio.SharePoint.RecycleApplicationPool;Microsoft.VisualStudio.SharePoint.RetractSolution;Microsoft.VisualStudio.SharePoint.AddSolution;Microsoft.VisualStudio.SharePoint.PostDeploymentCommand</DeploymentSteps>
+            <RetractionSteps>Microsoft.VisualStudio.SharePoint.RecycleApplicationPool;Microsoft.VisualStudio.SharePoint.RetractSolution</RetractionSteps>
+          </DeploymentConfiguration>
+        </DeploymentConfigurations>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

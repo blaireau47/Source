@@ -1,0 +1,60 @@
+﻿
+ div.boiteLiensUtiles ul li a.supprimable {
+	background: url("../images/btnSupprimer_of.gif") no-repeat right 6px;
+	overflow: hidden;
+}
+
+ div.corpsPage {
+	padding-top: 20px;
+ }
+
+ html, body {
+	height: 100%!important;
+ }
+.ms-cui-topBar1 {
+	width: auto;
+
+}
+a.btnManuel {
+	display: block;
+	margin-bottom: 1em;
+}
+.colCentre h2.titreNouvelles {
+	margin:0;
+}
+
+#gabarit-accueil div.boiteProchaineSceance:first-child ul li, #gabarit-accueil div.boiteProchaineSceance ul li {
+	overflow:hidden;
+}
+
+DIV.colCentre H1, DIV.headerPage H1 {
+	font-size:180%;
+}
+
+DIV.colCentre H2, DIV.headerPage H2 {
+	font-size:150%;
+}
+
+#boiteProchaineSeancePopup UL LI {
+    width:249px;
+}
+
+#gabarit-comite DIV.colGauche 
+{
+    margin-top:3px;
+}
+
+#gabarit-comite DIV.innerCorpsPage
+{
+    margin-top:10px;
+}
+
+#gabarit-comite UL.dfwp-list
+{
+	width:290px!important;
+	padding-left: 15px;
+}
+
+#contentWraper UL.listeLiensExternes {
+	width:694px !important;   
+}

@@ -1,0 +1,63 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+	<Field ID="{d4790d8e-c392-4781-8811-343c6df0060c}" Type="HTML"
+		Name="Contenu" DisplayName="Contenu" StaticName="Contenu"
+		Required="FALSE"
+		NumLines="6"
+		RichText="TRUE"
+	  RichTextMode="FullHtml"
+		Sortable="FALSE"
+		Group="SansPapier Colonnes" />
+	<Field ID="{83fe6ea3-7017-4bf7-8fd4-cbb24660adf7}" Type="DateTime"
+		Name="DateContenu" DisplayName="DateContenu" StaticName="DateContenu"
+		Required="FALSE"
+		NumLines="6"
+		Format="DateTime" 
+		RichText="FALSE"
+		Sortable="FALSE"
+		Group="SansPapier Colonnes" />
+	<Field ID="{ab72b113-c430-4d96-9f03-f3930d9611fa}" Type="HTML"
+			Name="Sommaire" DisplayName="Sommaire" StaticName="Sommaire"
+			Required="FALSE"
+			NumLines="6"
+			RichText="TRUE"
+			RichTextMode="FullHtml"
+			Sortable="FALSE"
+			Group="SansPapier Colonnes" />
+	<Field ID="{e462fbed-14ab-49b9-a27d-ccc992d2a414}" Type="DateTime"
+		Name="DateSeance" DisplayName="DateSeance" StaticName="DateSeance"
+		Required="FALSE"
+		NumLines="6"
+		Format="DateOnly"
+		RichText="FALSE"
+		Sortable="FALSE"
+		Group="SansPapier Colonnes" />
+	<Field ID="{0f884abf-014d-4fe9-83b8-657605312a78}" Type="Link"
+		Name="LienUrl" DisplayName="LienUrl" StaticName="LienUrl"
+		Required="FALSE"
+		RichText="TRUE" 
+		RichTextMode="FullHtml"
+		Sortable="FALSE"
+		Group="SansPapier Colonnes" />
+	<Field ID="{ab212ce1-30dc-400b-bec8-364fb474037e}" Type="Link"
+		Name="LienDocumentSeance" DisplayName="LienDocumentSeance" StaticName="LienDocumentSeance"
+		Required="FALSE"
+		RichText="TRUE"
+		RichTextMode="FullHtml"
+		Sortable="FALSE"
+		Group="SansPapier Colonnes" />
+  <Field ID="{0f884bbf-024d-4ee9-83b8-657605312a78}" Type="Boolean"
+    Name="AdresseCC" DisplayName="Est en CC" StaticName="AdresseCC"
+    Required="FALSE"
+    Group="SansPapier Colonnes" />
+  <Field ID="{081772F4-DF5D-4427-884F-431818351FD2}" Type="Text"
+			Name="Categorie" DisplayName="Categorie" StaticName="Categorie"
+			MaxLength="50"
+      Required="TRUE"
+			Sortable="TRUE"
+			Group="SansPapier Colonnes" />
+  <Field ID="{4BAA55A0-7A4D-477F-80D6-9AC923AB4332}" Type="Boolean"
+		Name="RedirectionAutomatique" DisplayName="Redirection Automatique" StaticName="RedirectionAutomatique"
+		Required="FALSE"
+		Group="SansPapier Colonnes" />
+</Elements>

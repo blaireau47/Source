@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ProjectItem Type="Microsoft.VisualStudio.SharePoint.VisualWebPart" DefaultFile="SeanceUserControl.ascx" SupportedTrustLevels="FullTrust" SupportedDeploymentScopes="Site" xmlns="http://schemas.microsoft.com/VisualStudio/2010/SharePointTools/SharePointProjectItemModel">
+  <Files>
+    <ProjectItemFile Source="Elements.xml" Target="SeanceWebPart\" Type="ElementManifest" />
+    <ProjectItemFile Source="Seance.webpart" Target="SeanceWebPart\" Type="ElementFile" />
+    <ProjectItemFile Source="SeanceUserControl.ascx" Target="CONTROLTEMPLATES\SansPapier.Variation.Portail.VisualWebParts\SeanceWebPart\" Type="TemplateFile" />
+  </Files>
+  <SafeControls>
+    <SafeControl Name="SafeControlEntry1" Assembly="$SharePoint.Project.AssemblyFullName$" Namespace="SansPapier.Variation.Portail.VisualWebParts.SeanceWebPart" TypeName="*" IsSafe="true" IsSafeAgainstScript="false" />
+  </SafeControls>
+</ProjectItem>

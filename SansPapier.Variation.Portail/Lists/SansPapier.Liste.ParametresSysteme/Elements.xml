@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+
+	<!--The fields to create for the list-->
+	<Field ID="{3a25f149-d231-47ae-a401-69eb68008516}"
+			Name="Cle"
+			Type="Text" DisplayName="Cle"
+			Required="FALSE" NumLines="6"></Field>
+	<Field ID="{ade0ea86-d69d-4068-ba52-77e71e617d24}"
+			Name="ValeurParametre"
+			Type="Text" DisplayName="ValeurParametre"
+			Required="FALSE" NumLines="6"></Field>
+
+	<!--The content type created for the list-->
+	<ContentType
+      ID="0x01004d360004c8074de6a25f4d8cdd3be8cc"
+      Name="SansPapier.Liste.ParametresSystemeTypeContenu"
+      Group="SansPapier - Listes"
+      Description="Liste des paramètres système de SansPapier"
+      Version="0">
+		<FieldRefs>
+			<FieldRef ID="{3a25f149-d231-47ae-a401-69eb68008516}" Name="Cle" DisplayName="Cle" Required="FALSE"/>
+			<FieldRef ID="{ade0ea86-d69d-4068-ba52-77e71e617d24}" Name="ValeurParametre" DisplayName="ValeurParametre" Required="FALSE"/>
+		</FieldRefs>
+	</ContentType>
+
+	<!-- Do not change the value of the Name attribute below. If it does not match the folder name of the List Definition project item, an error will occur when the project is run. -->
+    <ListTemplate
+        Name="SansPapier.Liste.ParametresSysteme"
+        Type="10002"
+        BaseType="0"
+        OnQuickLaunch="TRUE"
+        SecurityBits="11"
+        Sequence="410"
+        DisplayName="Liste des paramètres système de SansPapier"
+        Description="Liste des paramètres système de SansPapier"
+        Image="/_layouts/images/itgen.png"/>
+</Elements>

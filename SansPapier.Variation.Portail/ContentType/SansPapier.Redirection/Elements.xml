@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <!-- Parent ContentType: SansPapier.PageBase (SansPapier.Portail\SansPapier.PageBase) (0x010100C568DB52D9D0A14D9B2FDCC96666E9F2007948130EC3DB064584E219954237AF3900242457EFB8B24247815D688C526CD44D008932dd259d58457cb116219b66cf73de) -->
+  <ContentType ID="0x010100C568DB52D9D0A14D9B2FDCC96666E9F2007948130EC3DB064584E219954237AF3900242457EFB8B24247815D688C526CD44D008932dd259d58457cb116219b66cf73de006978f5e462d04dd08b2a1b1c04f7754f"
+	Name="SansPapier.Redirection"
+	Group="Types de contenu SansPapier"
+	Description="Type de contenu de la page de redirection de SansPapier. Hérite de PageBase."
+	Inherits="TRUE"
+	Version="0">
+    <FieldRefs>
+      <FieldRef ID="{0f884abf-014d-4fe9-83b8-657605312a78}" Name="LienUrl" DisplayName="LienUrl" Required="TRUE" />
+      <FieldRef ID="{4BAA55A0-7A4D-477F-80D6-9AC923AB4332}" Name="RedirectionAutomatique" DisplayName="Redirection Automatique" Required="FALSE" />
+    </FieldRefs>
+  </ContentType>
+</Elements>

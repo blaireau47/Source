@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <Module Name="MasterPages" Url="_catalogs/masterpage" >
+    <File Path="MasterPages\SansPapier.Variation.Navigation.master" Type="GhostableInLibrary" Url="SansPapierMasterPages/SansPapier.Variation.Navigation.master" >
+      <Property Name="Title" Value="Page maître navigation" /> 
+    </File>
+  </Module>
+</Elements>

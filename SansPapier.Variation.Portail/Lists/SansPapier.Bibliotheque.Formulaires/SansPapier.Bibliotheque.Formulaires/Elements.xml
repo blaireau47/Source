@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <ListInstance Title="SansPapier.Portail - SansPapier.Bibliotheque.Formulaires"
+                OnQuickLaunch="TRUE"
+                TemplateType="10004"
+                Url="Lists/SansPapier.Portail-SansPapier.Bibliotheque.Formulaires"
+                Description="My List Instance">
+  </ListInstance>
+</Elements>

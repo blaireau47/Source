@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Feature xmlns="http://schemas.microsoft.com/sharepoint/">
+<Properties>
+    <Property Key="typesDeContenuATraiter" Value="SansPapier.Accueil;SansPapier.Comite;SansPapier.Authentification;SansPapier.Contenu;SansPapier.DocumentBase;SansPapier.DocumentFormulaire;SansPapier.DocumentSeance;SansPapier.ListeNouvelles;SansPapier.PageBase;SansPapier.Recherche;SansPapier.SeanceConseil"/>
+    <Property Key="majChamp" Value="True"/>
+    <Property Key="supprimerChamp" Value="False"/>
+</Properties>
+</Feature>

@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <!-- Parent ContentType: SansPapier.Portail - PageIntranetCA (SansPapier.Portail\PageIntranetCA) (0x010100C568DB52D9D0A14D9B2FDCC96666E9F2007948130EC3DB064584E219954237AF3900242457EFB8B24247815D688C526CD44D008932dd259d58457cb116219b66cf73de) -->
+  <ContentType ID="0x010100C568DB52D9D0A14D9B2FDCC96666E9F2007948130EC3DB064584E219954237AF3900242457EFB8B24247815D688C526CD44D008932dd259d58457cb116219b66cf73de0024ed08e42cd44a64b5a9a94114c688c4"
+               Name="SansPapier.Accueil"
+               Group="Types de contenu SansPapier"
+               Description="Type de contenu de l'Accueil de SansPapier. Hérite de PageBase."
+               Inherits="TRUE"
+               Version="0">
+    <FieldRefs>
+    </FieldRefs>
+  </ContentType>
+</Elements>

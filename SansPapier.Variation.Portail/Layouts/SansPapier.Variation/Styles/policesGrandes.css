@@ -1,0 +1,16 @@
+﻿body
+{
+
+}
+
+div.navUtilitaire li a.btnTailleTexteRegulier {
+	display:block;
+}
+div.navUtilitaire li a.btnTailleTexteGrande {
+	display:none;
+}
+ 
+.colCentre {
+	font-size: 1.5em!important;
+}
+

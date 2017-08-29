@@ -1,0 +1,72 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<List xmlns:ows="Microsoft SharePoint" Title="SansPapier.Portail - SansPapier.Liste.LiensUtiles" FolderCreation="FALSE" Direction="$Resources:Direction;" Url="Lists/SansPapier.Portail-SansPapier.Liste.LiensUtiles" BaseType="0" xmlns="http://schemas.microsoft.com/sharepoint/">
+  <MetaData>
+    <ContentTypes>
+			<ContentTypeRef ID="0x01004d360004c8074de6a25f4d8cdd3be8de"/>
+      <ContentTypeRef ID="0x01">
+        <Folder TargetName="Item" />
+      </ContentTypeRef>
+      <ContentTypeRef ID="0x0120" />
+    </ContentTypes>
+    <Fields>
+      <Field ID="{335C3E31-15CD-4133-B9E7-75AA08194889}"
+				Name="Nom"
+				Type="Text" DisplayName="Nom"
+				Required="FALSE" NumLines="6"></Field>
+      <Field ID="{CA7A4C0B-32D5-4FA1-8D35-B5868AD9B55A}"
+					Name="Url"
+					Type="Text" DisplayName="Url"
+					Required="FALSE" NumLines="6"></Field>
+      <Field ID="{2CF12F72-F6D5-4AD3-BD56-1FFC1F2C563D}"
+					Name="Utilisateur"
+					Type="Text" DisplayName="Utilisateur"
+					Required="FALSE"></Field>
+		</Fields>
+    <Views>
+      <View BaseViewID="0" Type="HTML" MobileView="TRUE" TabularView="FALSE">
+        <Toolbar Type="Standard" />
+        <XslLink Default="TRUE">main.xsl</XslLink>
+        <RowLimit Paged="TRUE">30</RowLimit>
+        <ViewFields>
+					<FieldRef Name="Nom" DisplayName="Nom"></FieldRef>
+					<FieldRef Name="Url" DisplayName="Url"></FieldRef>
+					<FieldRef Name="Utilisateur" DisplayName="Utilisateur"></FieldRef>
+        </ViewFields>
+        <Query>
+          <OrderBy>
+            <FieldRef Name="Modified" Ascending="FALSE"></FieldRef>
+          </OrderBy>
+        </Query>
+        <ParameterBindings>
+          <ParameterBinding Name="AddNewAnnouncement" Location="Resource(wss,addnewitem)" />
+          <ParameterBinding Name="NoAnnouncements" Location="Resource(wss,noXinviewofY_LIST)" />
+          <ParameterBinding Name="NoAnnouncementsHowTo" Location="Resource(wss,noXinviewofY_ONET_HOME)" />
+        </ParameterBindings>
+      </View>
+      <View BaseViewID="1" Type="HTML" WebPartZoneID="Main" DisplayName="$Resources:core,objectiv_schema_mwsidcamlidC24;" DefaultView="TRUE" MobileView="TRUE" MobileDefaultView="TRUE" SetupPath="pages\viewpage.aspx" ImageUrl="/_layouts/images/generic.png" Url="AllItems.aspx">
+        <Toolbar Type="Standard" />
+        <XslLink Default="TRUE">main.xsl</XslLink>
+        <RowLimit Paged="TRUE">30</RowLimit>
+        <ViewFields>
+					<FieldRef Name="Nom" DisplayName="Nom"></FieldRef>
+					<FieldRef Name="Url" DisplayName="Url"></FieldRef>
+					<FieldRef Name="Utilisateur" DisplayName="Utilisateur"></FieldRef>
+        </ViewFields>
+        <Query>
+          <OrderBy>
+            <FieldRef Name="ID"></FieldRef>
+          </OrderBy>
+        </Query>
+        <ParameterBindings>
+          <ParameterBinding Name="NoAnnouncements" Location="Resource(wss,noXinviewofY_LIST)" />
+          <ParameterBinding Name="NoAnnouncementsHowTo" Location="Resource(wss,noXinviewofY_DEFAULT)" />
+        </ParameterBindings>
+      </View>
+    </Views>
+    <Forms>
+      <Form Type="DisplayForm" Url="DispForm.aspx" SetupPath="pages\form.aspx" WebPartZoneID="Main" />
+      <Form Type="EditForm" Url="EditForm.aspx" SetupPath="pages\form.aspx" WebPartZoneID="Main" />
+      <Form Type="NewForm" Url="NewForm.aspx" SetupPath="pages\form.aspx" WebPartZoneID="Main" />
+    </Forms>
+  </MetaData>
+</List>

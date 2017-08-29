@@ -1,0 +1,80 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<List xmlns:ows="Microsoft SharePoint" Title="SansPapier.Portail - SansPapier.Liste.Courriels" FolderCreation="FALSE" Direction="$Resources:Direction;" Url="Lists/SansPapier.Portail-SansPapier.Liste.Courriels" BaseType="0" xmlns="http://schemas.microsoft.com/sharepoint/">
+  <MetaData>
+    <ContentTypes>
+			<ContentTypeRef ID="0x01004d360004c8074de6a25f4d8cdd3be8dd"/>
+      <ContentTypeRef ID="0x01">
+        <Folder TargetName="Item" />
+      </ContentTypeRef>
+      <ContentTypeRef ID="0x0120" />
+    </ContentTypes>
+    <Fields>
+			<Field ID="{cc247d89-c1cf-424e-87e5-6a0ffd563cc5}"
+				Name="Nom"
+				Type="Text" DisplayName="Nom"
+				Required="FALSE" NumLines="6"></Field>
+			<Field ID="{d3db4d48-70d5-4dec-9e10-fd31b8a6b0df}"
+					Name="Prenom"
+					Type="Text" DisplayName="Prenom"
+					Required="FALSE" NumLines="6"></Field>
+			<Field ID="{6dcbf215-37b4-4d83-aa93-c8c87dc803ca}"
+					Name="Role2"
+					Type="Text" DisplayName="Role2"
+					Required="FALSE"></Field>
+			<Field ID="{1dcbf215-37b4-4d83-aa93-c8c87dc803bb}"
+					Name="Courriel"
+					Type="Text" DisplayName="Courriel"
+					Required="TRUE"></Field>
+			<Field ID="{28edd539-2045-4aaa-89da-42e8cda78e71}"
+					Name="Estgroupe" Type="Boolean"
+					DisplayName="Est un groupe"  Required="FALSE">
+			</Field>
+		</Fields>
+    <Views>
+      <View BaseViewID="0" Type="HTML" MobileView="TRUE" TabularView="FALSE">
+        <Toolbar Type="Standard" />
+        <XslLink Default="TRUE">main.xsl</XslLink>
+        <RowLimit Paged="TRUE">30</RowLimit>
+        <ViewFields>
+          <FieldRef Name="LinkTitleNoMenu"></FieldRef>
+        </ViewFields>
+        <Query>
+          <OrderBy>
+            <FieldRef Name="Modified" Ascending="FALSE"></FieldRef>
+          </OrderBy>
+        </Query>
+        <ParameterBindings>
+          <ParameterBinding Name="AddNewAnnouncement" Location="Resource(wss,addnewitem)" />
+          <ParameterBinding Name="NoAnnouncements" Location="Resource(wss,noXinviewofY_LIST)" />
+          <ParameterBinding Name="NoAnnouncementsHowTo" Location="Resource(wss,noXinviewofY_ONET_HOME)" />
+        </ParameterBindings>
+      </View>
+      <View BaseViewID="1" Type="HTML" WebPartZoneID="Main" DisplayName="$Resources:core,objectiv_schema_mwsidcamlidC24;" DefaultView="TRUE" MobileView="TRUE" MobileDefaultView="TRUE" SetupPath="pages\viewpage.aspx" ImageUrl="/_layouts/images/generic.png" Url="AllItems.aspx">
+        <Toolbar Type="Standard" />
+        <XslLink Default="TRUE">main.xsl</XslLink>
+        <RowLimit Paged="TRUE">30</RowLimit>
+        <ViewFields>
+          <FieldRef Name="Nom"></FieldRef>
+          <FieldRef Name="Prenom"></FieldRef>
+					<FieldRef Name="Role2"></FieldRef>
+					<FieldRef Name="Courriel"></FieldRef>
+					<FieldRef Name="Estgroupe"></FieldRef>
+        </ViewFields>
+        <Query>
+          <OrderBy>
+            <FieldRef Name="ID"></FieldRef>
+          </OrderBy>
+        </Query>
+        <ParameterBindings>
+          <ParameterBinding Name="NoAnnouncements" Location="Resource(wss,noXinviewofY_LIST)" />
+          <ParameterBinding Name="NoAnnouncementsHowTo" Location="Resource(wss,noXinviewofY_DEFAULT)" />
+        </ParameterBindings>
+      </View>
+    </Views>
+    <Forms>
+      <Form Type="DisplayForm" Url="DispForm.aspx" SetupPath="pages\form.aspx" WebPartZoneID="Main" />
+      <Form Type="EditForm" Url="EditForm.aspx" SetupPath="pages\form.aspx" WebPartZoneID="Main" />
+      <Form Type="NewForm" Url="NewForm.aspx" SetupPath="pages\form.aspx" WebPartZoneID="Main" />
+    </Forms>
+  </MetaData>
+</List>

@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <Module Name="PageLayouts" Url="_catalogs/masterpage">
+    <File Path="PageLayouts\SansPapier.Variation.Accueil.aspx" Type="GhostableInLibrary" Url="SansPapierLayouts/SansPapier.Variation.Accueil.aspx" >
+      <Property Name="Title" Value="Gabarit Accueil de SansPapier (Variation)" />
+      <Property Name="ContentType" Value="$Resources:cmscore,contenttype_pagelayout_name;" />
+      <Property Name="PublishingPreviewImage" Value="~SiteCollection/_catalogs/masterpage/$Resources:core,Culture;/Preview Images/CustomPageLayout.png, ~SiteCollection/_catalogs/masterpage/$Resources:core,Culture;/Preview Images/CustomPageLayout.png" />
+      <Property Name="PublishingAssociatedContentType" Value=";#SansPapier.Accueil;#0x010100C568DB52D9D0A14D9B2FDCC96666E9F2007948130EC3DB064584E219954237AF3900242457EFB8B24247815D688C526CD44D008932dd259d58457cb116219b66cf73de0024ed08e42cd44a64b5a9a94114c688c4;#"/>
+    </File>
+    <File Path="PageLayouts\SansPapier.Variation.SeanceConseil.aspx" Type="GhostableInLibrary" Url="SansPapierLayouts/SansPapier.Variation.SeanceConseil.aspx" >
+      <Property Name="Title" Value="Gabarit Séances du Conseil de SansPapier (Variation)" />
+      <Property Name="ContentType" Value="$Resources:cmscore,contenttype_pagelayout_name;" />
+      <Property Name="PublishingPreviewImage" Value="~SiteCollection/_catalogs/masterpage/$Resources:core,Culture;/Preview Images/CustomPageLayout.png, ~SiteCollection/_catalogs/masterpage/$Resources:core,Culture;/Preview Images/CustomPageLayout.png" />
+      <Property Name="PublishingAssociatedContentType" Value=";#SansPapier.SeanceConseil;#0x010100C568DB52D9D0A14D9B2FDCC96666E9F2007948130EC3DB064584E219954237AF3900242457EFB8B24247815D688C526CD44D008932dd259d58457cb116219b66cf73de001f16e036d2c74b8d8875e5f358487209;#"/>
+    </File>
+    <File Path="PageLayouts\SansPapier.Variation.ListeNouvelles.aspx" Type="GhostableInLibrary" Url="SansPapierLayouts/SansPapier.Variation.ListeNouvelles.aspx" >
+      <Property Name="Title" Value="Gabarit Liste de Nouvelles de SansPapier (Variation)" />
+      <Property Name="ContentType" Value="$Resources:cmscore,contenttype_pagelayout_name;" />
+      <Property Name="PublishingPreviewImage" Value="~SiteCollection/_catalogs/masterpage/$Resources:core,Culture;/Preview Images/CustomPageLayout.png, ~SiteCollection/_catalogs/masterpage/$Resources:core,Culture;/Preview Images/CustomPageLayout.png" />
+      <Property Name="PublishingAssociatedContentType" Value=";#SansPapier.ListeNouvelles;#0x010100C568DB52D9D0A14D9B2FDCC96666E9F2007948130EC3DB064584E219954237AF3900242457EFB8B24247815D688C526CD44D008932dd259d58457cb116219b66cf73de00a5a9956e15f34008a267d5ebeb77897a;#"/>
+    </File>
+    <File Path="PageLayouts\SansPapier.Variation.Contenu.aspx" Type="GhostableInLibrary" Url="SansPapierLayouts/SansPapier.Variation.Contenu.aspx">
+      <Property Name="Title" Value="Gabarit Contenu de SansPapier (Variation)" />
+      <Property Name="ContentType" Value="$Resources:cmscore,contenttype_pagelayout_name;" />
+      <Property Name="PublishingPreviewImage" Value="~SiteCollection/_catalogs/masterpage/$Resources:core,Culture;/Preview Images/CustomPageLayout.png, ~SiteCollection/_catalogs/masterpage/$Resources:core,Culture;/Preview Images/CustomPageLayout.png" />
+      <Property Name="PublishingAssociatedContentType" Value=";#SansPapier.Contenu;#0x010100C568DB52D9D0A14D9B2FDCC96666E9F2007948130EC3DB064584E219954237AF3900242457EFB8B24247815D688C526CD44D008932dd259d58457cb116219b66cf73de00d34587bd471b471e90fa87a9a71b1a2a;#"/>
+    </File>
+		<File Path="PageLayouts\SansPapier.Variation.Redirection.aspx" Type="GhostableInLibrary" Url="PageLayouts/SansPapier.Variation.Redirection.aspx" >
+			<Property Name="Title" Value="Gabarit page de redirection de SansPapier (Variation)" />
+			<Property Name="ContentType" Value="$Resources:cmscore,contenttype_pagelayout_name;" />
+			<Property Name="PublishingPreviewImage" Value="~SiteCollection/_catalogs/masterpage/$Resources:core,Culture;/Preview Images/CustomPageLayout.png, ~SiteCollection/_catalogs/masterpage/$Resources:core,Culture;/Preview Images/CustomPageLayout.png" />
+			<Property Name="PublishingAssociatedContentType" Value=";#SansPapier.Redirection;#0x010100C568DB52D9D0A14D9B2FDCC96666E9F2007948130EC3DB064584E219954237AF3900242457EFB8B24247815D688C526CD44D008932dd259d58457cb116219b66cf73de006978f5e462d04dd08b2a1b1c04f7754f;#"/>
+		</File>
+    <File Path="PageLayouts\SansPapier.Variation.Comite.aspx" Type="GhostableInLibrary" Url="SansPapierLayouts/SansPapier.Variation.Comite.aspx" >
+      <Property Name="Title" Value="Gabarit Comité de SansPapier (Variation)" />
+      <Property Name="ContentType" Value="$Resources:cmscore,contenttype_pagelayout_name;" />
+      <Property Name="PublishingPreviewImage" Value="~SiteCollection/_catalogs/masterpage/$Resources:core,Culture;/Preview Images/CustomPageLayout.png, ~SiteCollection/_catalogs/masterpage/$Resources:core,Culture;/Preview Images/CustomPageLayout.png" />
+      <Property Name="PublishingAssociatedContentType" Value=";#SansPapier.Comite;#0x010100C568DB52D9D0A14D9B2FDCC96666E9F2007948130EC3DB064584E219954237AF3900242457EFB8B24247815D688C526CD44D008932dd259d58457cb116219b66cf73de00cb93211d2c74413db9e4efff97be08a0;#"/>
+    </File>
+  </Module>
+</Elements>

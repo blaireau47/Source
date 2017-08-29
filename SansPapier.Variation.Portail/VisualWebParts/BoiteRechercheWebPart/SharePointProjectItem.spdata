@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ProjectItem Type="Microsoft.VisualStudio.SharePoint.VisualWebPart" DefaultFile="BoiteRechercheWebPartUserControl.ascx" SupportedTrustLevels="FullTrust" SupportedDeploymentScopes="Site" xmlns="http://schemas.microsoft.com/VisualStudio/2010/SharePointTools/SharePointProjectItemModel">
+  <Files>
+    <ProjectItemFile Source="Elements.xml" Target="BoiteRechercheWebPart\" Type="ElementManifest" />
+    <ProjectItemFile Source="BoiteRechercheWebPart.webpart" Target="BoiteRechercheWebPart\" Type="ElementFile" />
+    <ProjectItemFile Source="BoiteRechercheWebPartUserControl.ascx" Target="CONTROLTEMPLATES\SansPapier.Variation.Portail.VisualWebParts\BoiteRechercheWebPart\" Type="TemplateFile" />
+  </Files>
+  <SafeControls>
+    <SafeControl Name="SafeControlEntry1" Assembly="$SharePoint.Project.AssemblyFullName$" Namespace="SansPapier.Variation.Portail.VisualWebParts.BoiteRechercheWebPart" TypeName="*" IsSafe="true" IsSafeAgainstScript="false" />
+  </SafeControls>
+</ProjectItem>

@@ -1,0 +1,366 @@
+﻿ <%@ Master Language="C#" Inherits="SansPapier.Variation.Portail.PageMaitres.Navigation, SansPapier.Variation.Portail, Version=1.0.0.0, Culture=neutral, PublicKeyToken=ce9f8559da8e47df" %>
+
+
+<%@ Import Namespace="Microsoft.SharePoint" %>
+<%@ Assembly Name="Microsoft.SharePoint.Portal, Version=14.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c" %>
+
+<%@ Register Tagprefix="wss" Namespace="Microsoft.SharePoint.WebControls" Assembly="Microsoft.SharePoint, Version=14.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c" %> 
+<%@ Register Tagprefix="wss" Namespace="Microsoft.SharePoint.WebPartPages" Assembly="Microsoft.SharePoint, Version=14.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c" %> 
+<%@ Register Tagprefix="wss" Namespace="Microsoft.SharePoint.Publishing.WebControls" Assembly="Microsoft.SharePoint.Publishing, Version=14.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c" %> 
+<%@ Register Tagprefix="wss" Namespace="Microsoft.SharePoint.Publishing.Navigation" Assembly="Microsoft.SharePoint.Publishing, Version=14.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c" %>
+<%@ Register Tagprefix="wss" Namespace="Microsoft.SharePoint.Portal.WebControls" Assembly="Microsoft.Office.Server.Search, Version=14.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c" %>
+
+<%@ Register TagPrefix="wss" TagName="Welcome" src="~/_controltemplates/Welcome.ascx" %>
+<%@ Register TagPrefix="wss" TagName="DesignModeConsole" src="~/_controltemplates/DesignModeConsole.ascx" %>
+<%@ Register TagPrefix="wss" TagName="MUISelector" src="~/_controltemplates/MUISelector.ascx" %>
+
+<%@ Register TagPrefix="wss" Namespace="Microsoft.Office.Server.Search.WebControls" Assembly="Microsoft.Office.Server.Search, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c"%>
+<%@Register TagPrefix="wss" TagName="PublishingRibbon" Src="~/_controltemplates/15/Ribbon.ascx"%>
+
+
+<%@ Register TagPrefix="pho" Namespace="Phoenix.UI.SharePoint" Assembly="Phoenix, Version=2.6.0.0, Culture=neutral, PublicKeyToken=52b1a4d3308f84e5" %>
+<%@ Register TagPrefix="pho" Namespace="Phoenix.UI.SharePoint.Controls" Assembly="Phoenix, Version=2.6.0.0, Culture=neutral, PublicKeyToken=52b1a4d3308f84e5" %>
+<%@ Register TagPrefix="pho" Namespace="Phoenix.UI.SharePoint.Publishing.Controls" Assembly="Phoenix, Version=2.6.0.0, Culture=neutral, PublicKeyToken=52b1a4d3308f84e5" %>
+<%@ Register TagPrefix="pho" Namespace="Phoenix.UI.Web.Controls" Assembly="Phoenix, Version=2.6.0.0, Culture=neutral, PublicKeyToken=52b1a4d3308f84e5" %>
+
+
+<%@ Register TagPrefix="SPapier" TagName="Recherche" src="~/_CONTROLTEMPLATES/SansPapier.Variation.Portail.VisualWebParts/BoiteRechercheWebPart/BoiteRechercheWebPartUserControl.ascx" %>		
+<%@ Register TagPrefix="SPapier" TagName="LiensUtiles" src="~/_CONTROLTEMPLATES/SansPapier.Variation.Portail.VisualWebParts/LienUtileWebPart/LienUtileWebPartUserControl.ascx" %>	
+<%@ Register TagPrefix="SPapier" TagName="EnvoiCourrielMembre" src="~/_CONTROLTEMPLATES/SansPapier.Variation.Portail.VisualWebParts/EnvoiCourrielMembreWebPart/EnvoiCourrielMembreWebPartUserControl.ascx" %>	
+
+<%@ Register Tagprefix="PublishingNavigation" Namespace="Microsoft.SharePoint.Publishing.Navigation" Assembly="Microsoft.SharePoint.Publishing, Version=14.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c" %>
+
+<!DOCTYPE HTML>
+<wss:SPHtmlTag runat="server" id="SPHtmlTag" dir="&lt;%$Resources:wss,multipages_direction_dir_value%&gt;">
+
+	<head id="head" runat="server">
+		<meta http-equiv="X-UA-Compatible" content="IE=10"/>
+		<meta charset="utf-8" />
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+		<meta http-equiv="Expires" content="0"/>
+		
+		<!-- ===== STARTER: Robots  ======================================================================================================= -->
+        <wss:RobotsMetaTag runat="server" />
+
+		<!-- ===== STARTER: Favicon / Windows Tile ======================================================================================== -->	
+		<wss:SPShortcutIcon runat="server" IconUrl="/_layouts/15/images/favicon.ico" />
+		<!--<wss:SPPinnedSiteTile runat="server" TileUrl="/_catalogs/masterpage/StarterBranding/metrotile.png" TileColor="#0072C6" />		-->
+
+		<title id="titrePage" runat="server">
+
+			<asp:ContentPlaceHolder ID="PlaceHolderPageTitle" runat="server">
+				<wss:FieldValue id="fldPageTitle" FieldName="Title" runat="server"/>
+			</asp:ContentPlaceHolder>
+		</title>
+
+		<!-- ===== STARTER: SP Scripts and CSS  =========================================================================================== -->
+		<wss:StartScript runat="server" />
+		<wss:CssLink runat="server" Version="15" />
+		<wss:CacheManifestLink runat="server" />
+		<wss:PageRenderMode runat="server" RenderModeType="Standard" />
+		<wss:ScriptLink language="javascript" name="core.js" OnDemand="true" runat="server" Localizable="false" />
+		<wss:ScriptLink language="javascript" name="menu.js" OnDemand="true" runat="server" Localizable="false" />
+		<wss:ScriptLink language="javascript" name="callout.js" OnDemand="true" runat="server" Localizable="false" />
+		<wss:ScriptLink language="javascript" name="sharing.js" OnDemand="true" runat="server" Localizable="false" />
+		<wss:ScriptLink language="javascript" name="suitelinks.js" OnDemand="true" runat="server" Localizable="false" />
+		<wss:CustomJSUrl runat="server" />
+		<wss:SoapDiscoveryLink runat="server" />
+
+		<!-- ===== STARTER: Additional header placeholder - overridden by asp:content on pages or page layouts  =========================== -->
+		<asp:ContentPlaceHolder ID="PlaceHolderAdditionalPageHead" runat="server" />
+		<wss:DelegateControl runat="server" ControlId="AdditionalPageHead" AllowMultipleControls="true" />
+
+		<!-- ===== STARTER: Core SharePoint CSS =========================================================================================== -->
+		<wss:CssRegistration Name="Themable/corev15.css" runat="server" />
+
+		<!-- ===== STARTER: Custom CSS  =================================================================================================== -->
+		<link id="cssMasterPiv" rel="stylesheet" type="text/css" href="~/_layouts/15/SansPapier.variation/Styles/global.css?version=2012-02-14" runat="server" />
+		<link id="cssMasterTheme" rel="stylesheet" type="text/css" href="~/_layouts/15/SansPapier.variation/Styles/themes/{0}.css" runat="server" />
+        <wss:CssRegistration name="~/_layouts/15/SansPapier.variation/Styles/SP2013Accordion.css" runat="server"  After="SharepointCssFile"  />
+        
+
+		<wss:EditModePanel runat=server id="pnlEditModePanel" PageDisplayMode="Edit">
+		   <link id="cssEdition" rel="stylesheet" type="text/css" href="~/_layouts/15/SansPapier.variation/Styles/globalEdition.css?version=2012-02-06" runat="server" />
+		</wss:EditModePanel>
+		<wss:AuthoringContainer DisplayAudience="ReadersOnly" runat="server">
+			<link id="cssLectures" rel="stylesheet" type="text/css" href="~/_layouts/15/SansPapier.variation/Styles/globalLecture.css?version=2012-02-06" runat="server" />
+   		</wss:AuthoringContainer>
+		<!-- Styles pour le changement de taille de texte -->
+		<link href="~/_layouts/15/SansPapier.variation/Styles/policesReguliers.css" type="text/css" rel="alternate stylesheet" id="txtRegulier" title="Regulier" runat="server" />
+		<link href="~/_layouts/15/SansPapier.variation/Styles/policesGrandes.css" type="text/css" rel="alternate stylesheet" id="txtGrande" title="Grande" runat="server" />
+
+		<link href="~/_layouts/15/SansPapier.variation/Styles/jquery-ui-1.8.10.custom.css" type="text/css" rel="stylesheet" runat="server" />
+		<link href="~/_layouts/15/SansPapier.variation/Styles/JqueryUIOveride.css" type="text/css" rel="stylesheet" runat="server" />
+		<!--[if IE 7]>
+			<link href="~/_layouts/15/SansPapier/Styles/ie7.css" type="text/css" rel="stylesheet" runat="server" />
+		<![endif]-->	
+		<link id="cssPrint" rel="stylesheet" type="text/css" href="~/_layouts/15/SansPapier.variation/Styles/Impression.css" media="print" runat="server" />
+
+		<script type="text/javascript"> 
+			var _usager = "<%=ObtenirUsager() %>";
+			var _bibliothequeDestination = "<%=ObtenirBibliothequeDestination() %>";
+			var _versionsUrl = '<asp:Literal runat="server" Text="<%$SPUrl:~SiteCollection/_layouts/15/versions.aspx%>" />';
+			var _urlPageActions = '<asp:Literal runat="server" Text="<%$SPUrl:~SiteCollection/_layouts/15/SansPapier.Variation.Portail/ActionsClient.aspx%>" />';	
+		    var _root = "<%=ObtenirLaRacine() %>";
+		    var _RootVariation = "<%=ObtenirLaVariation() %>";
+		    var _VariationDisplayName = "<%=ObtenirVariationDisplayName() %>";
+		    var _CurrentWebUrl = "<%=GetDocumentsSeancesWebUrl() %>";
+		    var _libelleRedigerCourriel = '<asp:Literal ID="Libelle_Rediger_Courriel" runat="server" Text="<%$Resources:global,Libelle_Rediger_Courriel%>" />';
+		    var _libelleChargementCourriel = '<asp:Literal ID="Libelle_Chargement_Courriel" runat="server" Text="<%$Resources:global,Libelle_Chargement_Courriel%>" />';
+		    var _messageSupprimerLien = '<asp:Literal ID="Message_Supprimer_Lien" runat="server" Text="<%$Resources:global,Message_Supprimer_Lien%>" />';
+
+		    var _messageSelectionAdresse = '<asp:Literal ID="Message_Selection_Adresse" runat="server" Text="<%$Resources:global,Message_Selection_Adresse%>" />'; 
+		    var _texteErreurAJAX = '<asp:Literal ID="Message_Erreur_Ajax" runat="server" Text="<%$Resources:global,Message_Erreur_Ajax%>" />'; 
+
+		    var _libelleOuvrir = '<asp:Literal ID="Libelle_Ouvrir" runat="server" Text="<%$Resources:global,Libelle_Ouvrir%>" />'; 
+		    var _libelleOuvrirDocumentAnnote = '<asp:Literal ID="Libelle_Ouvrir_Document_Annote" runat="server" Text="<%$Resources:global,Libelle_Ouvrir_Document_Annote%>" />'; 
+		    var _libelleOuvrirAnnoter = '<asp:Literal ID="Libelle_Ouvrir_Annoter" runat="server" Text="<%$Resources:global,Libelle_Ouvrir_Annoter%>" />'; 
+		    var _libelleVersionsAnterieures = '<asp:Literal ID="Libelle_Versions_Anterieures" runat="server" Text="<%$Resources:global,Libelle_Versions_Anterieures%>" />'; 
+            
+		    var _libelleAjouter = '<asp:Literal ID="Libelle_Ajouter" runat="server" Text="<%$Resources:global,Libelle_Ajouter%>" />'; 
+		    var _libelleAnnuler = '<asp:Literal ID="Libelle_Annuler" runat="server" Text="<%$Resources:global,Libelle_Annuler%>" />'; 
+		    var _libelleTitre = '<asp:Literal ID="Libelle_Titre" runat="server" Text="<%$Resources:global,Libelle_Titre%>" />';
+		    var _libelleTitreTooltip = '<asp:Literal ID="Libelle_Titre_Tooltip" runat="server" Text="<%$Resources:global,Libelle_Titre_Tooltip%>" />'; 
+		    var _libelleUrl = '<asp:Literal ID="Libelle_Url" runat="server" Text="<%$Resources:global,Libelle_Url%>" />';
+		    var _libelleUrlTooltip = '<asp:Literal ID="Libelle_Url_Tooltip" runat="server" Text="<%$Resources:global,Libelle_Url_Tooltip%>" />'; 
+		    var _libelleAjouterLien = '<asp:Literal ID="Libelle_Ajouter_Lien" runat="server" Text="<%$Resources:global,Libelle_Ajouter_Lien%>" />'; 
+		    var _libelleTousChampsObligatoires = '<asp:Literal ID="Libelle_Tous_Champs_Obligatoires" runat="server" Text="<%$Resources:global,Libelle_Tous_Champs_Obligatoires%>" />'; 
+		    
+		    var _regExpBoutonOuvrirAnnoter = '<asp:Literal ID="RegExp_Bouton_Ouvrir_Annoter" runat="server" Text="<%$Resources:global,RegExp_Bouton_Ouvrir_Annoter%>" />'; 
+		    var _regExpBoutonOuvrirDocumentAnnote = '<asp:Literal ID="RegExp_Bouton_Ouvrir_Document_Annote" runat="server" Text="<%$Resources:global,RegExp_Bouton_Ouvrir_Document_Annote%>" />'; 
+		    var _regExpBoutonOuvrir = '<asp:Literal ID="RegExp_Bouton_Ouvrir" runat="server" Text="<%$Resources:global,RegExp_Bouton_Ouvrir%>" />'; 
+
+
+		    var _messageConfirmationCopie = '<asp:Literal runat="server" Text="<%$Resources:global,Message_Confirmation_Copie%>" />';
+		    var _messageErreurCommunication = '<asp:Literal runat="server" Text="<%$Resources:global,Message_Erreur_Communication%>" />';
+		    var _messageErreurFormat_Dates = '<asp:Literal runat="server" Text="<%$Resources:global,Message_Erreur_Format_Dates%>" />';
+		    var _messageErreurCopie = '<asp:Literal runat="server" Text="<%$Resources:global,Message_Erreur_Copie%>" />';
+		    var _messageDateSeanceObligatoire = '<asp:Literal runat="server" Text="<%$Resources:global,Message_DateSeance_Obligatoire%>" />';
+            
+
+
+
+		</script>
+		
+		<script language="javascript" type="text/javascript">
+			// empêche le chargement de l'activex name.dll
+			function ProcessImn(){}
+		</script>
+
+		<script src="/_layouts/15/SansPapier.variation/Scripts/jquery-1.8.2.min.js" type="text/javascript"></script>
+		<script src="/_layouts/15/SansPapier.variation/Scripts/jquery-ui-1.8.10.tabs.min.js" type="text/javascript"></script>
+		<script src="/_layouts/15/SansPapier.variation/Scripts/menu-plugin.js" type="text/javascript"></script>
+		<script src="/_layouts/15/SansPapier.variation/Scripts/stylesheetToggle.js" type="text/javascript"></script>
+		<!-- script pour permettre les coins ronds dans ie, docs: doc: http://jquery.malsup.com/corner/  -->
+		<script src="/_layouts/15/SansPapier.variation/Scripts/jquery.corner.js" type="text/javascript"></script>
+		<script src="/_layouts/15/SansPapier.variation/Scripts/global.js" type="text/javascript" charset="ISO-8859-1" ></script>
+        <script src="/_layouts/15/SansPapier.Variation/Scripts/SP2013Accordion.js"></script>
+		<asp:ContentPlaceHolder id="cplhHead" runat="server"/>
+
+	</head>
+
+	<body id="<% =NomGabarit() %>" onload="if (typeof(_spBodyOnLoadWrapper) != 'undefined') _spBodyOnLoadWrapper();" scroll="no">
+
+	<!-- ===== STARTER: SP IDs / Prefetch SP images / SP Form  =========================================================================== -->
+	<wss:SPClientIDGenerator runat="server" ServerControlID="DeltaPlaceHolderMain;DeltaPlaceHolderPageTitleInTitleArea;DeltaPlaceHolderUtilityContent" />
+	<wss:ImageLink runat="server" />
+	<wss:SharePointForm onsubmit="if (typeof(_spFormOnSubmitWrapper) != 'undefined') {return _spFormOnSubmitWrapper();} else {return true;}" runat="server">
+
+	<asp:ScriptManager id="ScriptManager" runat="server" EnablePageMethods="false" EnablePartialRendering="true" EnableScriptGlobalization="true" EnableScriptLocalization="true" />
+	
+	<!-- ===== STARTER: SharePoint Reqs this for adding columns ===================================================== -->
+	<script type="text/javascript"> var submitHook = function () { return false; }; theForm._spOldSubmit = theForm.submit; theForm.submit = function () { if (!submitHook()) { this._spOldSubmit(); } }; </script>	
+	<wss:SPWebPartManager runat="server"/>
+	
+
+	<wss:AuthoringContainer runat="server" DisplayAudience="AuthorsOnly">
+		<!-- ===== STARTER: Ribbon Code Starts Here ===================================================== -->
+		<wss:PublishingRibbon runat="server" />
+	<!-- ===== STARTER: Ribbon Code Ends Here  ======================================================================================== -->
+	</wss:AuthoringContainer>
+
+		<!-- =====  Start Scrolling Body Area ============================================================ -->
+		<div id="contentWraper">
+			<!-- these two div id's are used to setup the main scrolling page area, they should stay if you are sticking the ribbon to the top -->
+			<div id="s4-workspace" class="s4-nosetwidth">  <!-- NOTE: s4-nosetwidth is used when you are setting a fixed page width in css, remove for 100% -->
+				<div id="s4-bodyContainer">
+
+ 				<!-- ========== Debut : Entete PIV ========== -->	
+					<div class='banner'>
+						<img alt="Banière" src='<asp:Literal runat="server" Text="<%$SPUrl:~SiteCollection/%>" />SiteCollectionImages/banner.png'>
+					</div>
+					<div id="entetePIV" class="s4-notdlg"><!-- la classe "s4-notdlg" permet de cacher l'élement des boites de dialgue de sharepoint-->
+						<a href="<%$SPUrl:~SiteCollection/%>" runat="server"  class="logoSite">
+                    		<img alt="Logo site" src='<asp:Literal runat="server" Text="<%$SPUrl:~SiteCollection/%>" />SiteCollectionImages/logo-site.png'>
+						</a>
+
+						<h1 class="headerPiv"><span><asp:Literal ID="Header_Title" runat="server" Text="<%$Resources:global,Titre_Entete%>" /></span></h1><!--<span><wss:ProjectProperty Property="Description" runat="server" /></span>-->
+						<div id="menu-piv">
+							<ul>
+                                <li><asp:HyperLink ID="lnkChangeLangue" runat="server" Text="<%$Resources:global,Libelle_Change_Langue%>"  NavigateUrl="<%$Resources:global,Url_Change_Langue%>"/></li>
+								<li><asp:HyperLink ID="lnkDeconnexion" runat="server" Text="<%$Resources:global,Libelle_deconnexion%>" /></li>
+							</ul>
+						</div>
+					</div>
+					<!-- ========== Fin : Entete PIV ========== -->	
+					<div class="navUtilitaire">
+						<ul>
+							<li class="boiteRecherche">
+								<div style="display:none"></div>
+								<asp:ContentPlaceHolder id="PlaceHolderSearchArea" runat="server">
+									<wss:DelegateControl runat="server" ControlId="SmallSearchInputBox" Version="4" />
+								</asp:ContentPlaceHolder>
+					
+								<SPapier:Recherche id="controleRecherche" runat="server" />
+							</li>
+						</ul>
+					</div>	
+					<asp:ContentPlaceHolder id="cplhMenuGlobal" runat="server">
+						<div class="navPrincipaleConteneur">
+							<div class="navPrincipale menuGlobal menu-horizontal">
+							  <PublishingNavigation:PortalSiteMapDataSource
+										ID="topSiteMap"
+										runat="server"
+										EnableViewState="false"
+										SiteMapProvider="GlobalNavigation"
+										StartFromCurrentNode="true"
+										StartingNodeOffset="0"
+										ShowStartingNode="false"
+										TrimNonCurrentTypes="Heading"/>
+
+									<!-- top navigation menu (set to use the new Simple Rendering) -->
+									<wss:AspMenu
+									  ID="TopNavigationMenuV4"
+									  EncodeTitle="false"
+									  Runat="server"
+									  EnableViewState="false"
+									  DataSourceID="topSiteMap"
+									  AccessKey="<%$Resources:wss,navigation_accesskey%>"
+									  UseSimpleRendering="true"
+									  UseSeparateCss="false"
+									  Orientation="Horizontal"
+									  StaticDisplayLevels="1"
+									  MaximumDynamicDisplayLevels="1" 
+
+									  SkipLinkText=""
+									  CssClass="s4-tn">
+									</wss:AspMenu>	
+							</div>
+						</div> 
+					</asp:ContentPlaceHolder>
+			
+					<div class="corpsPage">
+						<asp:ContentPlaceHolder ID="cplhPageHeader" runat="server"></asp:ContentPlaceHolder> 
+						<div class="innerCorpsPage">        
+							<div class="colGauche">
+								<asp:ContentPlaceHolder ID="cplhContenuNavigation" runat="server">
+									<div class="navigationSecondaire">
+										<asp:ContentPlaceHolder ID="cplhMenuSecondaire" runat="server">
+											<wss:AspMenu
+												ID="CurrentNav"
+												EncodeTitle="false"
+												runat="server"
+												EnableViewState="false"
+												DataSourceID="SiteMapDS"
+												UseSeparateCSS="false"
+												UseSimpleRendering="true"
+												Orientation="Vertical"
+												StaticDisplayLevels="4"
+												MaximumDynamicDisplayLevels="1"
+												CssClass="s4-qlCA" 
+												SkipLinkText="<%$Resources:cms,masterpages_skiplinktext%>"/>
+
+											<PublishingNavigation:PortalSiteMapDataSource   
+												ID="SiteMapDS"
+												runat="server"
+												EnableViewState="false"
+												SiteMapProvider="OrdreDuJourCurrentNavigation"
+												StartFromCurrentNode="true"
+												StartingNodeOffset="0"
+												ShowStartingNode="true"
+												TrimNonCurrentTypes="Heading"/>
+										</asp:ContentPlaceHolder>
+									</div>
+								</asp:ContentPlaceHolder>
+							</div>
+				    
+							<div class="colCentre">
+								<h1><asp:ContentPlaceHolder id="PlaceHolderPageTitleInTitleArea" runat="server"></asp:ContentPlaceHolder></h1>
+								<div class="messagewelcomelinks">
+									<p>
+                                        <asp:Literal ID="Message_Welcome_Line_1" runat="server" Text="<%$Resources:global,Message_Welcome_Line_1%>" /> 
+                                    </p>
+									<ol>
+										<li>
+                                            <asp:Literal ID="Message_Welcome_Line_2" runat="server" Text="<%$Resources:global,Message_Welcome_Line_2%>" />
+										</li>
+										<li>
+                                            <asp:Literal ID="Message_Welcome_Line_3_1" runat="server" Text="<%$Resources:global,Message_Welcome_Line_3_1%>" />
+                                            <a href="../_layouts/15/AreaWelcomePage.aspx">
+                                                <asp:Literal ID="Message_Welcome_Line_3_2" runat="server" Text="<%$Resources:global,Message_Welcome_Line_3_2%>" /></a>.
+
+										</li>
+									</ol>
+								</div>
+								<asp:ContentPlaceHolder ID="PlaceHolderMain" runat="server" />
+								<asp:ContentPlaceHolder ID="cplhContenuPrincipal" runat="server" />
+							</div>
+
+							<div class="clear">
+							</div>
+
+						</div>
+					</div>
+
+                    <div class="footer clear-me">                        
+					    <div class="FooterColGauche">
+                            <SPapier:EnvoiCourrielMembre id="EnvoiCourrielMembre" runat="server" />
+					        <!--<asp:hyperlink ID="lnkAfficherCalendrierIPad"  Text="Calendrier" class="btn color2 " runat="server"></asp:hyperlink>
+                            <div class='note'>Envoyez une invitation ou consultez les prochaines rencontres</div>
+                            <asp:hyperlink ID="lnkJoindreSecretariatGeneral"  Text="Joindre le service de soutien" class="btn color2 " runat="server"></asp:hyperlink>
+   					        <asp:hyperlink ID="lnkManuelRegieInterne" ImageUrl="~/_layouts/15/SansPapier/Images/btnManuelRegieInterne_of.gif" class="btnManuel" runat="server"></asp:hyperlink>-->
+					    </div>
+                        					    
+                        <div class="FooterColDroite">
+                            <SPapier:LiensUtiles id="ucLiensUtiles" runat="server" />
+                        </div>                        					                        
+				    </div>
+                    <div class="copyright"><asp:Literal ID="Copyright" runat="server" Text="<%$Resources:global,Copyright%>" /><asp:HyperLink ID="lnkPageConditions" runat="server" Text="<%$Resources:global,Conditions_Utilisation%>" /></div>
+					<div id="DeveloperDashboard" class="ms-developerdashboard">
+						<wss:DeveloperDashboard runat="server"/>
+					</div>
+
+				</div>
+
+			</div>
+            							
+            <div style="display:none">
+			    <asp:Panel ID="pnlDummyPlaceHolders" runat="server">				
+				    <asp:ContentPlaceHolder id="PlaceHolderNavSpacer" runat="server" />
+				    <asp:ContentPlaceHolder id="PlaceHolderSiteName" runat="server" />
+				    <asp:ContentPlaceHolder id="PlaceHolderTopNavBar" runat="server" />
+				    <asp:ContentPlaceHolder id="PlaceHolderHorizontalNav" runat="server" />
+				    <asp:ContentPlaceHolder ID="PlaceHolderPageImage" runat="server" />
+				    <asp:ContentPlaceHolder ID="PlaceHolderBodyLeftBorder" runat="server" />
+				    <asp:ContentPlaceHolder ID="PlaceHolderTitleLeftBorder" runat="server" />
+				    <asp:ContentPlaceHolder ID="PlaceHolderTitleAreaSeparator" runat="server" />
+				    <asp:ContentPlaceHolder ID="OSSConsole" runat="server" />
+				    <asp:ContentPlaceHolder ID="PlaceHolderTitleRightMargin" runat="server" />
+				    <asp:ContentPlaceHolder id="PlaceHolderBodyAreaClass" runat ="server" />
+				    <asp:ContentPlaceHolder id="PlaceHolderTitleAreaClass" runat ="server" />
+				    <asp:ContentPlaceHolder id="PlaceHolderBodyRightMargin" runat="server" />
+				    <asp:ContentPlaceHolder id="PlaceHolderLeftNavBar" runat="server" />
+                    <asp:ContentPlaceHolder id="PlaceHolderTitleBreadcrumb" runat="server" />
+			    </asp:Panel>
+            </div>
+			<asp:ContentPlaceHolder id="PlaceHolderFormDigest" runat="server">
+				<wss:FormDigest runat="server"/>
+			</asp:ContentPlaceHolder>
+			<asp:ContentPlaceHolder id="PlaceHolderPageDescription" runat="server">
+			</asp:ContentPlaceHolder>					
+		</div>
+	
+	</wss:SharePointForm>
+</body>
+
+</wss:SPHtmlTag>

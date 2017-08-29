@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Feature xmlns="http://schemas.microsoft.com/sharepoint/">
+<Properties>
+  <Property Key="pageMaitreSansPapier" Value="_catalogs/masterpage/SansPapierMasterPages/SansPapier.Variation.Navigation.master" />
+  <Property Key="estRecursif" Value="False" />
+</Properties>
+</Feature>

@@ -1,0 +1,20 @@
+﻿.ui-widget-content {
+	border: none;
+	color: inherit;
+	padding: 0;
+}
+
+.ui-tabs-nav {
+
+	background: url("../images/bgTabs.gif") no-repeat bottom center;
+	}
+
+.ui-widget-header {
+	border: 0;
+}
+.ui-widget-content a {
+    color: #116699;
+}
+a, a:active {
+    color: #116699;
+}

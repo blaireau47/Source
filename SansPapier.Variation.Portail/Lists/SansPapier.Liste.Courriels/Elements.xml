@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+
+	<!--The fields to create for the list-->
+	<Field ID="{cc247d89-c1cf-424e-87e5-6a0ffd563cc5}"
+			Name="Nom"
+			Type="Text" DisplayName="Nom"
+			Required="FALSE" NumLines="6"></Field>
+	<Field ID="{d3db4d48-70d5-4dec-9e10-fd31b8a6b0df}"
+			Name="Prenom"
+			Type="Text" DisplayName="Prenom"
+			Required="FALSE" NumLines="6"></Field>
+	<Field ID="{6dcbf215-37b4-4d83-aa93-c8c87dc803ca}"
+			Name="Role2"
+			Type="Text" DisplayName="Role2"
+			Required="FALSE"></Field>
+	<Field ID="{1dcbf215-37b4-4d83-aa93-c8c87dc803bb}"
+			Name="Courriel"
+			Type="Text" DisplayName="Courriel"
+			Required="TRUE"></Field>
+	<Field ID="{28edd539-2045-4aaa-89da-42e8cda78e71}"
+         Name="Estgroupe" Type="Boolean"
+         DisplayName="Est un groupe"  Required="FALSE">
+	</Field>
+
+	<!--The content type created for the list-->
+	<ContentType
+      ID="0x01004d360004c8074de6a25f4d8cdd3be8dd"
+      Name="SansPapier.Liste.CourrielsTypeContenu"
+      Group="SansPapier - Listes"
+      Description="Liste des courriels des membres de SansPapier"
+      Version="0">
+		<FieldRefs>
+			<FieldRef ID="{cc247d89-c1cf-424e-87e5-6a0ffd563cc5}" Name="Nom" DisplayName="Nom" Required="FALSE"/>
+			<FieldRef ID="{d3db4d48-70d5-4dec-9e10-fd31b8a6b0df}" Name="Prenom" DisplayName="Prenom" Required="FALSE"/>
+			<FieldRef ID="{6dcbf215-37b4-4d83-aa93-c8c87dc803ca}" Name="Role2" DisplayName="Role2" Required="FALSE"/>
+			<FieldRef ID="{1dcbf215-37b4-4d83-aa93-c8c87dc803bb}" Name="Courriel" DisplayName="Courriel" Required="TRUE"/>
+			<FieldRef ID="{28edd539-2045-4aaa-89da-42e8cda78e71}" Name="Estgroupe" DisplayName="Estgroupe" Required="FALSE"/>
+		</FieldRefs>
+	</ContentType>
+
+	<!-- Do not change the value of the Name attribute below. If it does not match the folder name of the List Definition project item, an error will occur when the project is run. -->
+    <ListTemplate
+        Name="SansPapier.Liste.Courriels"
+        Type="10000"
+        BaseType="0"
+        OnQuickLaunch="TRUE"
+        SecurityBits="11"
+        Sequence="410"
+        DisplayName="Liste des courriels des membres de SansPapier"
+        Description="Liste des courriels des membres de SansPapier"
+        Image="/_layouts/images/itgen.png"/>
+</Elements>

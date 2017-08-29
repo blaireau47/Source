@@ -1,0 +1,75 @@
+﻿body {
+	font-size: 10pt;
+	    color: #000;
+}
+
+h1 {
+	font-size: 14pt;
+}
+h2 {
+	font-size: 12pt;
+}
+h3 {
+	font-size: 12pt;
+}
+
+div.colGauche, div.colDroite, div.s4-trc-container, div#pivEntete, div.navUtilitaire, div.navPrincipaleConteneur, div#pivEntet, #contentWraper ul.listeLiensExternes, div.pivPiedDePage, .ui-tabs .ui-tabs-nav li, div.messagewelcomelinks, #valeurDateContenu {
+	display: none;
+}
+
+img.logoImpression {
+	display:block;
+	margin-bottom:10pt;
+}
+
+/*** Contenu ***/
+.colCentre h2 {
+    border-bottom: 1px solid #777777;
+    font-weight: bold;
+    margin-bottom: 2px;
+}
+
+/*** Pages de scéances ***/
+
+div.boiteProchaineSceance ol li {
+	font-size: 12pt;
+	font-weight: bold;
+	margin-top: 10pt;
+}
+
+div.boiteProchaineSceance ul li a {
+	display: block;
+	font-size: 10pt;
+	font-weight: normal;
+}
+.ui-tabs .ui-tabs-hide {
+    display: none !important;
+}
+.ui-tabs ul.ui-tabs-nav {
+	margin: 0;
+	padding: 0;
+}
+.ui-tabs .ui-tabs-nav li {
+	list-style: none outside none;
+	margin: 0;
+	margin-bottom: 10pt;
+	padding: 0;
+}
+.ui-tabs .ui-tabs-nav li a {
+	margin: 0;
+	padding: 0;
+}
+.ui-tabs .ui-tabs-nav li.ui-tabs-selected {
+	display: block;
+	font-weight: bold;
+	font-size: 11pt;
+}
+
+#tabs .ui-tabs-panel a.inactif {
+    color: #000;
+    text-decoration: none;
+}
+
+div {
+}
+

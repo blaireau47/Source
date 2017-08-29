@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <!-- Parent ContentType: SansPapier.Portail - SansPapier.DocumentBase (SansPapier.Portail\SansPapier.DocumentBase) (0x010100db857b34418f4569ba0f331b7c877326) -->
+  <ContentType ID="0x010100db857b34418f4569ba0f331b7c877326003544174b1c474d829653c89eb7ee00ab"
+	Name="SansPapier.DocumentFormulaire"
+	Group="Types de contenu SansPapier"
+	Description="Type de contenu de document formulaire de SansPapier. Hérite de DocumentBase."
+	Inherits="TRUE"
+	Version="0">
+    <FieldRefs>
+    </FieldRefs>
+  </ContentType>
+</Elements>

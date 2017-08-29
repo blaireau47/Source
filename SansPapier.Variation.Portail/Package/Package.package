@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" dslVersion="1.0.0.0" Id="8bf14a5e-eab6-4e52-b0fd-5e6c7685a417" solutionId="560fbd95-f9a1-499e-80f8-c966cd63f138" resetWebServer="false" sharePointProductVersion="15.0" name="SansPapier.Variation.Portail" xmlns="http://schemas.microsoft.com/VisualStudio/2008/SharePointTools/PackageModel">
+  <assemblies>
+    <customAssembly location="ICSharpCode.SharpZipLib.dll" deploymentTarget="GlobalAssemblyCache" sourcePath="Librairies\ICSharpCode.SharpZipLib.dll" />
+  </assemblies>
+  <features>
+    <featureReference itemId="0589f76f-2231-41a3-aa96-f8b812100f61" />
+    <featureReference itemId="563d300e-396b-4c6a-a34b-e940257382da" />
+    <featureReference itemId="f6611af7-a5c7-4f1c-a2f3-a37a1fe0902e" />
+    <featureReference itemId="a8185487-9df2-48b1-a1c7-16b701e7e2c4" />
+    <featureReference itemId="2b0efd24-40a0-42d6-884a-8485112c8837" />
+    <featureReference itemId="d4e2d507-73b0-4884-aa81-c2ae8d875ca4" />
+    <featureReference itemId="5766d94a-6330-425e-b0c9-f626cb5e917a" />
+  </features>
+  <projectItems>
+    <projectItemReference itemId="cdfd3bee-5f8c-43ca-ae10-cea11976f407" />
+    <projectItemReference itemId="53755041-f764-4d25-961f-d070b7170efb" />
+    <projectItemReference itemId="a213eb72-a57a-4f98-a69b-eb42642527d8" />
+    <projectItemReference itemId="b3d71aa5-9fbc-4de3-b0ee-dfaef4ac4674" />
+  </projectItems>
+</package>

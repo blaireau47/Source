@@ -1,0 +1,302 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="Conditions_Utilisation" xml:space="preserve">
+    <value>Terms of use</value>
+  </data>
+  <data name="Copyright" xml:space="preserve">
+    <value>© 2013 Agropur - </value>
+  </data>
+  <data name="Format_date" xml:space="preserve">
+    <value>MMMM d, yyyy</value>
+    <comment>YYYY/MM/DD</comment>
+  </data>
+  <data name="Libelle_Ajouter" xml:space="preserve">
+    <value>Add</value>
+  </data>
+  <data name="Libelle_Ajouter_Lien" xml:space="preserve">
+    <value>Add new link</value>
+  </data>
+  <data name="Libelle_Annuler" xml:space="preserve">
+    <value>Cancel</value>
+  </data>
+  <data name="libelle_Aucunes_Revue_Presse" xml:space="preserve">
+    <value>There is no news at this time.</value>
+  </data>
+  <data name="Libelle_Boite_Recherche" xml:space="preserve">
+    <value>Search</value>
+  </data>
+  <data name="Libelle_Bouton_Ajout_Lien" xml:space="preserve">
+    <value>Add a link</value>
+  </data>
+  <data name="Libelle_Bouton_Courriel" xml:space="preserve">
+    <value>Send an email</value>
+  </data>
+  <data name="Libelle_Change_Langue" xml:space="preserve">
+    <value>Français</value>
+  </data>
+  <data name="Libelle_Chargement_Courriel" xml:space="preserve">
+    <value>Loading email list...</value>
+  </data>
+  <data name="Libelle_Copier_ODJ" xml:space="preserve">
+    <value>Copy agenda from </value>
+  </data>
+  <data name="Libelle_deconnexion" xml:space="preserve">
+    <value>Sign out</value>
+  </data>
+  <data name="Libelle_Ouvrir" xml:space="preserve">
+    <value>Open</value>
+  </data>
+  <data name="Libelle_Ouvrir_Annoter" xml:space="preserve">
+    <value>Open and annotate</value>
+  </data>
+  <data name="Libelle_Ouvrir_Document_Annote" xml:space="preserve">
+    <value>Open annotated document</value>
+  </data>
+  <data name="Libelle_Prochaine_Seance" xml:space="preserve">
+    <value>Next Session : </value>
+  </data>
+  <data name="Libelle_Rediger_Courriel" xml:space="preserve">
+    <value>Write the email</value>
+  </data>
+  <data name="libelle_seances_anterieures" xml:space="preserve">
+    <value>Past Sessions</value>
+    <comment>Past Sessions :</comment>
+  </data>
+  <data name="Libelle_Telecharger_ODJ" xml:space="preserve">
+    <value>Download Agenda</value>
+  </data>
+  <data name="Libelle_Titre" xml:space="preserve">
+    <value>Title</value>
+  </data>
+  <data name="Libelle_Titre_Tooltip" xml:space="preserve">
+    <value>Link title</value>
+  </data>
+  <data name="Libelle_Tous_Champs_Obligatoires" xml:space="preserve">
+    <value>All fields are mandatory.</value>
+  </data>
+  <data name="libelle_Toutes_Revue_Presse" xml:space="preserve">
+    <value>All News</value>
+  </data>
+  <data name="Libelle_Url" xml:space="preserve">
+    <value>URL</value>
+  </data>
+  <data name="Libelle_Url_Tooltip" xml:space="preserve">
+    <value>Link URL</value>
+  </data>
+  <data name="Libelle_Versions_Anterieures" xml:space="preserve">
+    <value>Previous versions</value>
+    <comment>Previous versions :</comment>
+  </data>
+  <data name="Message_Aucune_Seance" xml:space="preserve">
+    <value>(ENGLISH) Le projet d’ordre du jour de la prochaine séance et les documents associés seront disponibles lors de l’avis de convocation  (7 jours avant la séance). </value>
+    <comment>Documents for the next session will be availbale as soon as possible.</comment>
+  </data>
+  <data name="Message_Confirmation_Copie" xml:space="preserve">
+    <value>The agenda has been copied.</value>
+  </data>
+  <data name="Message_DateSeance_Obligatoire" xml:space="preserve">
+    <value>The field DateSeance needs to be filled.</value>
+    <comment>Confirmer le nom du champ DateSeance en anglais, devrait être Session Date.</comment>
+  </data>
+  <data name="Message_Erreur_Ajax" xml:space="preserve">
+    <value>An error occurred while processing your request. Please try again.</value>
+  </data>
+  <data name="Message_Erreur_Communication" xml:space="preserve">
+    <value>An error occured while trying to reach the server.</value>
+  </data>
+  <data name="Message_Erreur_Copie" xml:space="preserve">
+    <value>An unexpected error occured while trying to copy the agenda.</value>
+  </data>
+  <data name="Message_Erreur_Format_Dates" xml:space="preserve">
+    <value>The field DateSeance format is not a valid date format.</value>
+    <comment>Confirmer le nom du champ DateSeance en anglais. Devrait être Session Date</comment>
+  </data>
+  <data name="Message_Patienter" xml:space="preserve">
+    <value>Please wait.</value>
+  </data>
+  <data name="Message_Selection_Adresse" xml:space="preserve">
+    <value>You must choose at least one member.</value>
+  </data>
+  <data name="Message_Supprimer_Lien" xml:space="preserve">
+    <value>Are you sure you want to remove this link?</value>
+  </data>
+  <data name="Message_Welcome_Line_1" xml:space="preserve">
+    <value>Ceci est une page d'accueil temporaire que vous devez modifier en suivant les étapes suivantes:</value>
+    <comment>À traduire</comment>
+  </data>
+  <data name="Message_Welcome_Line_2" xml:space="preserve">
+    <value>Créer une nouvelle page basée sur le gabarit approprié;</value>
+    <comment>À traduire</comment>
+  </data>
+  <data name="Message_Welcome_Line_3_1" xml:space="preserve">
+    <value>Changer la page d'accueil du site via cette</value>
+    <comment>À traduire</comment>
+  </data>
+  <data name="Message_Welcome_Line_3_2" xml:space="preserve">
+    <value>page de configuration</value>
+    <comment>Configuration page</comment>
+  </data>
+  <data name="Note_Courriel" xml:space="preserve">
+    <value>Choose the members</value>
+    <comment>À traduire la version française "Sélectionnez le ou les membres à qui vous voulez envoyer un courriel"</comment>
+  </data>
+  <data name="RegExp_Bouton_Ouvrir" xml:space="preserve">
+    <value>open</value>
+    <comment>Open</comment>
+  </data>
+  <data name="RegExp_Bouton_Ouvrir_Annoter" xml:space="preserve">
+    <value>annotate</value>
+    <comment>Annotate</comment>
+  </data>
+  <data name="RegExp_Bouton_Ouvrir_Document_Annote" xml:space="preserve">
+    <value>annotated</value>
+    <comment>Annotated</comment>
+  </data>
+  <data name="Titre_Entete" xml:space="preserve">
+    <value>Secure collaborative environment</value>
+  </data>
+  <data name="Titre_Page_Seance" xml:space="preserve">
+    <value>{0} Session</value>
+    <comment>Session</comment>
+  </data>
+  <data name="Titre_Prochaine_Seance" xml:space="preserve">
+    <value>Next Sesssion</value>
+    <comment>Next Session :</comment>
+  </data>
+  <data name="Titre_Section_Courriel" xml:space="preserve">
+    <value>Send an email</value>
+  </data>
+  <data name="Titre_Section_Liens_Utiles" xml:space="preserve">
+    <value>Useful links</value>
+  </data>
+  <data name="Titre_Section_Prochaines_Seances" xml:space="preserve">
+    <value>Next Sessions</value>
+    <comment>Next Sessions :</comment>
+  </data>
+  <data name="Titre_Section_Revue_Presse" xml:space="preserve">
+    <value>News</value>
+  </data>
+  <data name="Url_Change_Langue" xml:space="preserve">
+    <value>fr-ca</value>
+  </data>
+  <data name="Libelle_Action_Copier_ODJ" xml:space="preserve">
+    <value>Copy</value>
+  </data>
+</root>

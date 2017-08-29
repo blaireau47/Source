@@ -1,0 +1,11 @@
+﻿body {
+    overflow:visible;
+}
+
+body #s4-workspace {
+    overflow: auto !important;
+}
+
+.s4-trc-container {
+    display: none;
+}

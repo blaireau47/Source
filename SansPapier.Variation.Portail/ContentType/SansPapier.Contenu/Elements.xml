@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+	<!-- Parent ContentType: Page de base de SansPapier (SansPapier.Portail\SansPapier.PageBase) (0x010100C568DB52D9D0A14D9B2FDCC96666E9F2007948130EC3DB064584E219954237AF3900242457EFB8B24247815D688C526CD44D008932dd259d58457cb116219b66cf73de) -->
+	<ContentType ID="0x010100C568DB52D9D0A14D9B2FDCC96666E9F2007948130EC3DB064584E219954237AF3900242457EFB8B24247815D688C526CD44D008932dd259d58457cb116219b66cf73de00d34587bd471b471e90fa87a9a71b1a2a"
+							Name="SansPapier.Contenu"
+							Group="Types de contenu SansPapier"
+							Description="Type de contenu de l'Accueil de SansPapier. Hérite de PageBase."
+							Inherits="TRUE"
+							Version="0">
+		<FieldRefs>
+			<FieldRef ID="{ab72b113-c430-4d96-9f03-f3930d9611fa}" Name="Sommaire" DisplayName="Sommaire" Required="FALSE" />
+			<FieldRef ID="{d4790d8e-c392-4781-8811-343c6df0060c}" Name="Contenu" DisplayName="Contenu" Required="FALSE" />
+			<FieldRef ID="{83fe6ea3-7017-4bf7-8fd4-cbb24660adf7}" Name="DateContenu" DisplayName="DateContenu" Required="FALSE" />
+		</FieldRefs>
+	</ContentType>
+</Elements>

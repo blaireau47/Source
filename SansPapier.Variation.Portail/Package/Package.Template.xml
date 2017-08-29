@@ -1,0 +1,140 @@
+﻿<Solution xmlns="http://schemas.microsoft.com/sharepoint/" SolutionId="560fbd95-f9a1-499e-80f8-c966cd63f138" SharePointProductVersion="15.0">
+  <Assemblies>
+    <Assembly Location="ICSharpCode.SharpZipLib.dll" DeploymentTarget="GlobalAssemblyCache" />
+    <Assembly Location="SansPapier.Variation.Portail.dll" DeploymentTarget="GlobalAssemblyCache">
+      <SafeControls>
+        <SafeControl Assembly="SansPapier.Variation.Portail, Version=1.0.0.0, Culture=neutral, PublicKeyToken=ce9f8559da8e47df" Namespace="SansPapier.Variation.Portail.VisualWebParts.SeanceWebPart" TypeName="*" />
+        <SafeControl Assembly="SansPapier.Variation.Portail, Version=1.0.0.0, Culture=neutral, PublicKeyToken=ce9f8559da8e47df" Namespace="SansPapier.Variation.Portail.VisualWebParts.ListeNouvelleWebPart" TypeName="*" />
+        <SafeControl Assembly="SansPapier.Variation.Portail, Version=1.0.0.0, Culture=neutral, PublicKeyToken=ce9f8559da8e47df" Namespace="SansPapier.Variation.Portail.VisualWebParts.BoiteRechercheWebPart" TypeName="*" />
+        <SafeControl Assembly="SansPapier.Variation.Portail, Version=1.0.0.0, Culture=neutral, PublicKeyToken=ce9f8559da8e47df" Namespace="SansPapier.Variation.Portail.VisualWebParts.EnvoiCourrielMembreWebPart" TypeName="*" />
+        <SafeControl Assembly="SansPapier.Variation.Portail, Version=1.0.0.0, Culture=neutral, PublicKeyToken=ce9f8559da8e47df" Namespace="SansPapier.Variation.Portail.VisualWebParts.FormulairesWebPart" TypeName="*" />
+        <SafeControl Assembly="SansPapier.Variation.Portail, Version=1.0.0.0, Culture=neutral, PublicKeyToken=ce9f8559da8e47df" Namespace="SansPapier.Variation.Portail.VisualWebParts.LienUtileWebPart" TypeName="*" />
+        <SafeControl Assembly="SansPapier.Variation.Portail, Version=1.0.0.0, Culture=neutral, PublicKeyToken=ce9f8559da8e47df" Namespace="SansPapier.Portail.VisualWebParts.SeancesWebPart" TypeName="*" />
+        <SafeControl Assembly="SansPapier.Variation.Portail, Version=1.0.0.0, Culture=neutral, PublicKeyToken=ce9f8559da8e47df" Namespace="SansPapier.Variation.Portail.Gabarits" TypeName="*" />
+        <SafeControl Assembly="phoenix, Version=2.6.0.0, Culture=neutral, PublicKeyToken=52b1a4d3308f84e5" Namespace="Phoenix.UI.SharePoint.Controls" TypeName="*" />
+        
+      </SafeControls>
+    </Assembly>
+  </Assemblies>
+  <RootFiles>
+    <RootFile Location="Resources\global.en-US.resx" />
+    <RootFile Location="Resources\global.resx" />
+  </RootFiles>
+  <TemplateFiles>
+    <TemplateFile Location="CONTROLTEMPLATES\SansPapier.Variation.Portail.VisualWebParts\SeanceWebPart\SeanceUserControl.ascx" />
+    <TemplateFile Location="CONTROLTEMPLATES\SansPapier.Variation.Portail.VisualWebParts\ListeNouvelleWebPart\ListeNouvelleUserControl.ascx" />
+    <TemplateFile Location="CONTROLTEMPLATES\SansPapier.Variation.Portail.VisualWebParts\BoiteRechercheWebPart\BoiteRechercheWebPartUserControl.ascx" />
+    <TemplateFile Location="CONTROLTEMPLATES\SansPapier.Variation.Portail.VisualWebParts\EnvoiCourrielMembreWebPart\EnvoiCourrielMembreWebPartUserControl.ascx" />
+    <TemplateFile Location="CONTROLTEMPLATES\SansPapier.Variation.Portail.VisualWebParts\FormulairesWebPart\FormulairesWebPartUserControl.ascx" />
+    <TemplateFile Location="CONTROLTEMPLATES\SansPapier.Variation.Portail.VisualWebParts\FormulairesWebPart\FormulairesWebPartUserControl.ascx" />
+    <TemplateFile Location="CONTROLTEMPLATES\SansPapier.Variation.Portail.VisualWebParts\LienUtileWebPart\LienUtileWebPartUserControl.ascx" />
+    <TemplateFile Location="CONTROLTEMPLATES\SansPapier.Portail.VisualWebParts\ProchainesSeancesWebPart\ProchainesSeancesUserControl.ascx" />
+    <TemplateFile Location="Layouts\SansPapier.Variation\Images\AccueilBlanc.png" />
+    <TemplateFile Location="Layouts\SansPapier.Variation\Images\bandePIV.gif" />
+    <TemplateFile Location="Layouts\SansPapier.Variation\Images\bgAjoutLienBottom.gif" />
+    <TemplateFile Location="Layouts\SansPapier.Variation\Images\bgAjoutLienTop.gif" />
+    <TemplateFile Location="Layouts\SansPapier.Variation\Images\bgBoutonBleu.gif" />
+    <TemplateFile Location="Layouts\SansPapier.Variation\Images\bgBoutonGris.gif" />
+    <TemplateFile Location="Layouts\SansPapier.Variation\Images\bgBoutonOrange.gif" />
+    <TemplateFile Location="Layouts\SansPapier.Variation\Images\bgColDroite.gif" />
+    <TemplateFile Location="Layouts\SansPapier.Variation\Images\bgConnexion.gif" />
+    <TemplateFile Location="Layouts\SansPapier.Variation\Images\bgConnexion.png" />
+    <TemplateFile Location="Layouts\SansPapier.Variation\Images\bgConnexionModif.gif" />
+    <TemplateFile Location="Layouts\SansPapier.Variation\Images\bgConnexionModif.png" />
+    <TemplateFile Location="Layouts\SansPapier.Variation\Images\bgContenu.gif" />
+    <TemplateFile Location="Layouts\SansPapier.Variation\Images\bgContenuAccueil.gif" />
+    <TemplateFile Location="Layouts\SansPapier.Variation\Images\bgContenuInterieur.gif" />
+    <TemplateFile Location="Layouts\SansPapier.Variation\Images\bgEntete.gif" />
+    <TemplateFile Location="Layouts\SansPapier.Variation\Images\bgEntete.jpg" />
+    <TemplateFile Location="Layouts\SansPapier.Variation\Images\bgEnvoiCourrielBottom.gif" />
+    <TemplateFile Location="Layouts\SansPapier.Variation\Images\bgEnvoiCourrielTop.gif" />
+    <TemplateFile Location="Layouts\SansPapier.Variation\Images\bgNavGauche.gif" />
+    <TemplateFile Location="Layouts\SansPapier.Variation\Images\bgNavPrincipal.gif" />
+    <TemplateFile Location="Layouts\SansPapier.Variation\Images\bgNavUtilitaire.gif" />
+    <TemplateFile Location="Layouts\SansPapier.Variation\Images\bgPivBas.jpg" />
+    <TemplateFile Location="Layouts\SansPapier.Variation\Images\bgPivBasDroite.jpg" />
+    <TemplateFile Location="Layouts\SansPapier.Variation\Images\bgPivBasGauche.jpg" />
+    <TemplateFile Location="Layouts\SansPapier.Variation\Images\bgPivDroite.jpg" />
+    <TemplateFile Location="Layouts\SansPapier.Variation\Images\bgPIVEnvCollSec.gif" />
+    <TemplateFile Location="Layouts\SansPapier.Variation\Images\bgPlusProchaineSeance_of.gif" />
+    <TemplateFile Location="Layouts\SansPapier.Variation\Images\bgPrincipal.jpg" />
+    <TemplateFile Location="Layouts\SansPapier.Variation\Images\bgTabs.gif" />
+    <TemplateFile Location="Layouts\SansPapier.Variation\Images\btnAnnuler.gif" />
+    <TemplateFile Location="Layouts\SansPapier.Variation\Images\btnConnexion.gif" />
+    <TemplateFile Location="Layouts\SansPapier.Variation\Images\btnEnvoiCourriel_ov.gif" />
+    <TemplateFile Location="Layouts\SansPapier.Variation\Images\btnEnvoiCourrielClient_of.gif" />
+    <TemplateFile Location="Layouts\SansPapier.Variation\Images\btnFormulaires_of.gif" />
+    <TemplateFile Location="Layouts\SansPapier.Variation\Images\btnImprimer_of.gif" />
+    <TemplateFile Location="Layouts\SansPapier.Variation\Images\btnJoindreSecretariatGeneral_of.gif" />
+    <TemplateFile Location="Layouts\SansPapier.Variation\Images\btnManuelRegieInterne_of.gif" />
+    <TemplateFile Location="Layouts\SansPapier.Variation\Images\btnNavUtile_ov.gif" />
+    <TemplateFile Location="Layouts\SansPapier.Variation\Images\btnPlusProchaineSeance_of.gif" />
+    <TemplateFile Location="Layouts\SansPapier.Variation\Images\btnRecherche_of.gif" />
+    <TemplateFile Location="Layouts\SansPapier.Variation\Images\btnRedigerCourriel_of.gif" />
+    <TemplateFile Location="Layouts\SansPapier.Variation\Images\btnRevuePresse_of.gif" />
+    <TemplateFile Location="Layouts\SansPapier.Variation\Images\btnSoumettre.gif" />
+    <TemplateFile Location="Layouts\SansPapier.Variation\Images\btnSuiviActivite_of.gif" />
+    <TemplateFile Location="Layouts\SansPapier.Variation\Images\btnSupprimer_of.gif" />
+    <TemplateFile Location="Layouts\SansPapier.Variation\Images\btnTableauBord_of.gif" />
+    <TemplateFile Location="Layouts\SansPapier.Variation\Images\btnTailleTextMoins_of.gif" />
+    <TemplateFile Location="Layouts\SansPapier.Variation\Images\btnTailleTextPlus_of.gif" />
+    <TemplateFile Location="Layouts\SansPapier.Variation\Images\home_bg_full.jpg" />
+    <TemplateFile Location="Layouts\SansPapier.Variation\Images\icoAnterieure.gif" />
+    <TemplateFile Location="Layouts\SansPapier.Variation\Images\icoPDF.gif" />
+    <TemplateFile Location="Layouts\SansPapier.Variation\Images\img-piv-visage_1.jpg" />
+    <TemplateFile Location="Layouts\SansPapier.Variation\Images\img-piv-visage_2.jpg" />
+    <TemplateFile Location="Layouts\SansPapier.Variation\Images\img-piv-visage_3.jpg" />
+    <TemplateFile Location="Layouts\SansPapier.Variation\Images\img-piv-visage_4.jpg" />
+    <TemplateFile Location="Layouts\SansPapier.Variation\Images\img-piv-visage_5.jpg" />
+    <TemplateFile Location="Layouts\SansPapier.Variation\Images\lienActionDetail.gif" />
+    <TemplateFile Location="Layouts\SansPapier.Variation\Images\logo.gif" />
+    <TemplateFile Location="Layouts\SansPapier.Variation\Images\logo.png" />
+    <TemplateFile Location="Layouts\SansPapier.Variation\Images\LogoFondGris.gif" />
+    <TemplateFile Location="Layouts\SansPapier.Variation\Images\logoGouvQuebec.gif" />
+    <TemplateFile Location="Layouts\SansPapier.Variation\Images\logoImpression.gif" />
+    <TemplateFile Location="Layouts\SansPapier.Variation\Images\logoPIV.gif" />
+    <TemplateFile Location="Layouts\SansPapier.Variation\Images\logoPIVImpression.gif" />
+    <TemplateFile Location="Layouts\SansPapier.Variation\Images\menuPrincipalSeparateur.gif" />
+    <TemplateFile Location="Layouts\SansPapier.Variation\Images\PIVtitre.png" />
+    <TemplateFile Location="Layouts\SansPapier.Variation\Images\preload.gif" />
+    <TemplateFile Location="Layouts\SansPapier.Variation\Images\titEnviroComm.gif" />
+    <TemplateFile Location="Layouts\SansPapier.Variation\Images\titreDocumentsDinfo.gif" />
+    <TemplateFile Location="Layouts\SansPapier.Variation\Images\titreFormulaires.gif" />
+    <TemplateFile Location="Layouts\SansPapier.Variation\Images\titreLiensUtiles.gif" />
+    <TemplateFile Location="Layouts\SansPapier.Variation\Images\titreMembresDuComite.gif" />
+    <TemplateFile Location="Layouts\SansPapier.Variation\Images\titreNouvelles.gif" />
+    <TemplateFile Location="Layouts\SansPapier.Variation\Images\titreProchaineSeance.gif" />
+    <TemplateFile Location="Layouts\SansPapier.Variation\Images\titreRapportsEtAutresDocuments.gif" />
+    <TemplateFile Location="Layouts\SansPapier.Variation\Scripts\global.js" />
+    <TemplateFile Location="Layouts\SansPapier.Variation\Scripts\jquery-1.8.2.min.js" />
+    <TemplateFile Location="Layouts\SansPapier.Variation\Scripts\jquery-ui-1.8.10.tabs.min.js" />
+    <TemplateFile Location="Layouts\SansPapier.Variation\Scripts\jquery.corner.js" />
+    <TemplateFile Location="Layouts\SansPapier.Variation\Scripts\menu-plugin.js" />
+    <TemplateFile Location="Layouts\SansPapier.Variation\Scripts\stylesheetToggle.js" />
+    <TemplateFile Location="Layouts\SansPapier.Variation\Styles\connexion.css" />
+    <TemplateFile Location="Layouts\SansPapier.Variation\Styles\global.css" />
+    <TemplateFile Location="Layouts\SansPapier.Variation\Styles\globalEdition.css" />
+    <TemplateFile Location="Layouts\SansPapier.Variation\Styles\globalLecture.css" />
+    <TemplateFile Location="Layouts\SansPapier.Variation\Styles\ie7.css" />
+    <TemplateFile Location="Layouts\SansPapier.Variation\Styles\Impression.css" />
+    <TemplateFile Location="Layouts\SansPapier.Variation\Styles\jquery-ui-1.8.10.custom.css" />
+    <TemplateFile Location="Layouts\SansPapier.Variation\Styles\JqueryUIOveride.css" />
+    <TemplateFile Location="Layouts\SansPapier.Variation\Styles\policesGrandes.css" />
+    <TemplateFile Location="Layouts\SansPapier.Variation\Styles\policesReguliers.css" />
+    <TemplateFile Location="Layouts\SansPapier.Variation.Portail\ActionsClient.aspx" />
+    <TemplateFile Location="Layouts\SansPapier.Variation.Portail\ChangerMotPasse.aspx" />
+    <TemplateFile Location="Layouts\SansPapier.Variation.Portail\Login.aspx" />
+    <TemplateFile Location="Images\SansPapier.Variation.Portail\Feature_Agropur.png" />
+    <TemplateFile Location="Images\SansPapier.Variation.Portail\LoginArrow.png" />
+    <TemplateFile Location="Images\SansPapier.Variation.Portail\Logo-site.png" />
+  </TemplateFiles>
+  <FeatureManifests>
+    <FeatureManifest Location="SansPapier.Variation.Portail_SansPapier.Variation.ContentTypes\Feature.xml" />
+    <FeatureManifest Location="SansPapier.Variation.Portail_SansPapier.Variation.VisualWebParts\Feature.xml" />
+    <FeatureManifest Location="SansPapier.Variation.Portail_SansPapier.Variation.MasterPages\Feature.xml" />
+    <FeatureManifest Location="SansPapier.Variation.Portail_SansPapier.Variation.PageLayouts\Feature.xml" />
+    <FeatureManifest Location="SansPapier.Variation.Portail_SansPapier.Variation.Lists.Definitions\Feature.xml" />
+    <FeatureManifest Location="SansPapier.Variation.Portail_SansPapier.Variation.Columns\Feature.xml" />
+    <FeatureManifest Location="SansPapier.Variation.Portail_SansPapier.Variation.Configuration\Feature.xml" />
+  </FeatureManifests>
+</Solution>
